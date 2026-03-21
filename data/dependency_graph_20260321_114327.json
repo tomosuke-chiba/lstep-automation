@@ -1,0 +1,1831 @@
+{
+  "nodes": [
+    {
+      "id": "scenario:1129228",
+      "kind": "scenario",
+      "name": "旧-カウンセリング決定後-福岡MA"
+    },
+    {
+      "id": "scenario:1075762",
+      "kind": "scenario",
+      "name": "症例動画-ステップ配信-噛み合わない"
+    },
+    {
+      "id": "scenario:1075761",
+      "kind": "scenario",
+      "name": "症例動画-ステップ配信-正中"
+    },
+    {
+      "id": "scenario:1075758",
+      "kind": "scenario",
+      "name": "症例動画-ステップ配信-八重歯"
+    },
+    {
+      "id": "scenario:1075757",
+      "kind": "scenario",
+      "name": "症例動画-ステップ配信-受け口"
+    },
+    {
+      "id": "scenario:1075756",
+      "kind": "scenario",
+      "name": "症例動画-ステップ配信-すきっ歯"
+    },
+    {
+      "id": "scenario:1075755",
+      "kind": "scenario",
+      "name": "症例動画-ステップ配信-口唇"
+    },
+    {
+      "id": "scenario:1075754",
+      "kind": "scenario",
+      "name": "症例動画-ステップ配信-抜歯窩"
+    },
+    {
+      "id": "scenario:1075706",
+      "kind": "scenario",
+      "name": "症例動画-ステップ配信-叢生"
+    },
+    {
+      "id": "scenario:1075704",
+      "kind": "scenario",
+      "name": "症例動画-ステップ配信-出っ歯"
+    },
+    {
+      "id": "scenario:1168147",
+      "kind": "scenario",
+      "name": "LINE登録時アンケート 離脱防止シナリオ"
+    },
+    {
+      "id": "scenario:1165687",
+      "kind": "scenario",
+      "name": "予約後-オートウェビナー誘導"
+    },
+    {
+      "id": "scenario:1164712",
+      "kind": "scenario",
+      "name": "契約-配信STOP-30日後 配信"
+    },
+    {
+      "id": "scenario:1164710",
+      "kind": "scenario",
+      "name": "契約-検討向け-ステップ配信"
+    },
+    {
+      "id": "scenario:1164709",
+      "kind": "scenario",
+      "name": "精密-配信STOP-30日後 配信"
+    },
+    {
+      "id": "scenario:1162434",
+      "kind": "scenario",
+      "name": "精密-検討向け-ステップ配信"
+    },
+    {
+      "id": "scenario:1165667",
+      "kind": "scenario",
+      "name": "顕在層向け-カウンセリング誘導#1-時刻指定-1日後AW誘導シナリオ開始"
+    },
+    {
+      "id": "scenario:1165656",
+      "kind": "scenario",
+      "name": "オートウェビナー誘導-時刻指定 + 10種類症例Before / After"
+    },
+    {
+      "id": "tag:8938367",
+      "kind": "tag",
+      "name": "初診-予約済み",
+      "folder": "CV"
+    },
+    {
+      "id": "tag:8788998",
+      "kind": "tag",
+      "name": "福岡MA以外-予約URL-クリック済み",
+      "folder": "LINE内-Web予約リンク-クリック済み"
+    },
+    {
+      "id": "tag:8788996",
+      "kind": "tag",
+      "name": "福岡MA-予約URL-クリック済み",
+      "folder": "LINE内-Web予約リンク-クリック済み"
+    },
+    {
+      "id": "tag:9437204",
+      "kind": "tag",
+      "name": "心斎橋MA-予約完了",
+      "folder": "予約完了"
+    },
+    {
+      "id": "tag:9437203",
+      "kind": "tag",
+      "name": "名駅MA-予約完了",
+      "folder": "予約完了"
+    },
+    {
+      "id": "tag:9437201",
+      "kind": "tag",
+      "name": "日本橋MA-予約完了",
+      "folder": "予約完了"
+    },
+    {
+      "id": "tag:9437200",
+      "kind": "tag",
+      "name": "札幌MA-予約完了",
+      "folder": "予約完了"
+    },
+    {
+      "id": "tag:8911758",
+      "kind": "tag",
+      "name": "福岡MA-予約完了",
+      "folder": "予約完了"
+    },
+    {
+      "id": "tag:9253609",
+      "kind": "tag",
+      "name": "流入経路-LINE",
+      "folder": "流入経路"
+    },
+    {
+      "id": "tag:9253608",
+      "kind": "tag",
+      "name": "流入経路-Yahoo!",
+      "folder": "流入経路"
+    },
+    {
+      "id": "tag:9253607",
+      "kind": "tag",
+      "name": "流入経路-Google",
+      "folder": "流入経路"
+    },
+    {
+      "id": "tag:9253606",
+      "kind": "tag",
+      "name": "流入経路-広告",
+      "folder": "流入経路"
+    },
+    {
+      "id": "tag:9253605",
+      "kind": "tag",
+      "name": "流入経路-本サイト",
+      "folder": "流入経路"
+    },
+    {
+      "id": "tag:9253604",
+      "kind": "tag",
+      "name": "流入経路-LP",
+      "folder": "流入経路"
+    },
+    {
+      "id": "tag:9253603",
+      "kind": "tag",
+      "name": "流入経路-YouTube",
+      "folder": "流入経路"
+    },
+    {
+      "id": "tag:9253602",
+      "kind": "tag",
+      "name": "流入経路-Meta",
+      "folder": "流入経路"
+    },
+    {
+      "id": "tag:9253601",
+      "kind": "tag",
+      "name": "流入経路-TikTok",
+      "folder": "流入経路"
+    },
+    {
+      "id": "tag:9253600",
+      "kind": "tag",
+      "name": "流入経路-文京千石おとなこども矯正歯科",
+      "folder": "流入経路"
+    },
+    {
+      "id": "tag:9253599",
+      "kind": "tag",
+      "name": "流入経路-青山インターナショナル矯正歯科",
+      "folder": "流入経路"
+    },
+    {
+      "id": "tag:9253598",
+      "kind": "tag",
+      "name": "流入経路-福岡MA矯正歯科",
+      "folder": "流入経路"
+    },
+    {
+      "id": "tag:9253597",
+      "kind": "tag",
+      "name": "流入経路-心斎橋MA矯正歯科",
+      "folder": "流入経路"
+    },
+    {
+      "id": "tag:9253596",
+      "kind": "tag",
+      "name": "流入経路-札幌MA矯正歯科",
+      "folder": "流入経路"
+    },
+    {
+      "id": "tag:9253595",
+      "kind": "tag",
+      "name": "流入経路-名駅MA矯正歯科",
+      "folder": "流入経路"
+    },
+    {
+      "id": "tag:9253594",
+      "kind": "tag",
+      "name": "流入経路-エムアンドアソシエイツ矯正歯科",
+      "folder": "流入経路"
+    },
+    {
+      "id": "tag:9235020",
+      "kind": "tag",
+      "name": "流入経路-白上さん-共有-広告URL",
+      "folder": "流入経路"
+    },
+    {
+      "id": "tag:8862614",
+      "kind": "tag",
+      "name": "流入経路-大友さん-共有-広告URL",
+      "folder": "流入経路"
+    },
+    {
+      "id": "tag:8632061",
+      "kind": "tag",
+      "name": "流入経路-福岡MA-ホームページ-フッター登録",
+      "folder": "流入経路"
+    },
+    {
+      "id": "tag:8632051",
+      "kind": "tag",
+      "name": "流入経路-媒体名-分かりやすいワード",
+      "folder": "流入経路"
+    },
+    {
+      "id": "tag:8786720",
+      "kind": "tag",
+      "name": "リスティング広告-福岡MA歯科",
+      "folder": "流入経路-リスティング広告"
+    },
+    {
+      "id": "tag:9476645",
+      "kind": "tag",
+      "name": "登録アンケート-回答済み",
+      "folder": "LINE登録時アンケート"
+    },
+    {
+      "id": "tag:9445415",
+      "kind": "tag",
+      "name": "登録アンケート-矯正相談-すでに予約している",
+      "folder": "LINE登録時アンケート"
+    },
+    {
+      "id": "tag:8361821",
+      "kind": "tag",
+      "name": "登録アンケート-矯正相談-検討したい",
+      "folder": "LINE登録時アンケート"
+    },
+    {
+      "id": "tag:8361819",
+      "kind": "tag",
+      "name": "登録アンケート-矯正相談-もう少し考えてから相談したい",
+      "folder": "LINE登録時アンケート"
+    },
+    {
+      "id": "tag:8361814",
+      "kind": "tag",
+      "name": "登録アンケート-矯正相談-今すぐ相談したい",
+      "folder": "LINE登録時アンケート"
+    },
+    {
+      "id": "tag:8154941",
+      "kind": "tag",
+      "name": "登録時アンケート-医院-福岡",
+      "folder": "LINE登録時アンケート"
+    },
+    {
+      "id": "tag:8154939",
+      "kind": "tag",
+      "name": "登録時アンケート-医院-心斎橋",
+      "folder": "LINE登録時アンケート"
+    },
+    {
+      "id": "tag:8154938",
+      "kind": "tag",
+      "name": "登録時アンケート-医院-名古屋",
+      "folder": "LINE登録時アンケート"
+    },
+    {
+      "id": "tag:8154937",
+      "kind": "tag",
+      "name": "登録時アンケート-医院-日本橋",
+      "folder": "LINE登録時アンケート"
+    },
+    {
+      "id": "tag:8154936",
+      "kind": "tag",
+      "name": "登録時アンケート-医院-札幌",
+      "folder": "LINE登録時アンケート"
+    },
+    {
+      "id": "tag:8154931",
+      "kind": "tag",
+      "name": "登録時アンケート-症例-開咬or上顎前突or下顎前突",
+      "folder": "LINE登録時アンケート"
+    },
+    {
+      "id": "tag:8154927",
+      "kind": "tag",
+      "name": "登録時アンケート-症例-口唇閉鎖不全",
+      "folder": "LINE登録時アンケート"
+    },
+    {
+      "id": "tag:8154897",
+      "kind": "tag",
+      "name": "登録時アンケート-性別-男",
+      "folder": "LINE登録時アンケート"
+    },
+    {
+      "id": "tag:8154898",
+      "kind": "tag",
+      "name": "登録時アンケート-性別-女",
+      "folder": "LINE登録時アンケート"
+    },
+    {
+      "id": "tag:8154899",
+      "kind": "tag",
+      "name": "登録時アンケート-症例-八重歯",
+      "folder": "LINE登録時アンケート"
+    },
+    {
+      "id": "tag:8154900",
+      "kind": "tag",
+      "name": "登録時アンケート-症例-叢生",
+      "folder": "LINE登録時アンケート"
+    },
+    {
+      "id": "tag:8154901",
+      "kind": "tag",
+      "name": "登録時アンケート-症例-出っ歯",
+      "folder": "LINE登録時アンケート"
+    },
+    {
+      "id": "tag:8154902",
+      "kind": "tag",
+      "name": "登録時アンケート-症例-受け口",
+      "folder": "LINE登録時アンケート"
+    },
+    {
+      "id": "tag:8154903",
+      "kind": "tag",
+      "name": "登録時アンケート-症例-正中不一致",
+      "folder": "LINE登録時アンケート"
+    },
+    {
+      "id": "tag:8154904",
+      "kind": "tag",
+      "name": "登録時アンケート-症例-すきっ歯",
+      "folder": "LINE登録時アンケート"
+    },
+    {
+      "id": "tag:8154905",
+      "kind": "tag",
+      "name": "登録時アンケート-症例-抜歯窩",
+      "folder": "LINE登録時アンケート"
+    },
+    {
+      "id": "tag:8154906",
+      "kind": "tag",
+      "name": "登録時アンケート-症例-噛み合わせ",
+      "folder": "LINE登録時アンケート"
+    },
+    {
+      "id": "tag:8154907",
+      "kind": "tag",
+      "name": "登録時アンケート-症例-その他",
+      "folder": "LINE登録時アンケート"
+    },
+    {
+      "id": "tag:9437219",
+      "kind": "tag",
+      "name": "初診誘導-オートウェビナー_視聴中_滞在率0%",
+      "folder": "初診誘導-オートウェビナー-視聴維持率"
+    },
+    {
+      "id": "tag:9437218",
+      "kind": "tag",
+      "name": "初診誘導-オートウェビナー_視聴中_滞在率5%",
+      "folder": "初診誘導-オートウェビナー-視聴維持率"
+    },
+    {
+      "id": "tag:9437217",
+      "kind": "tag",
+      "name": "初診誘導-オートウェビナー_視聴中_滞在率10%",
+      "folder": "初診誘導-オートウェビナー-視聴維持率"
+    },
+    {
+      "id": "tag:9437216",
+      "kind": "tag",
+      "name": "初診誘導-オートウェビナー_視聴中_滞在率25%",
+      "folder": "初診誘導-オートウェビナー-視聴維持率"
+    },
+    {
+      "id": "tag:9437215",
+      "kind": "tag",
+      "name": "初診誘導-オートウェビナー_視聴中_滞在率50%",
+      "folder": "初診誘導-オートウェビナー-視聴維持率"
+    },
+    {
+      "id": "tag:9437214",
+      "kind": "tag",
+      "name": "初診誘導-オートウェビナー_視聴中_滞在率75%",
+      "folder": "初診誘導-オートウェビナー-視聴維持率"
+    },
+    {
+      "id": "tag:9437213",
+      "kind": "tag",
+      "name": "初診誘導-オートウェビナー_視聴中_滞在率90%",
+      "folder": "初診誘導-オートウェビナー-視聴維持率"
+    },
+    {
+      "id": "tag:9437212",
+      "kind": "tag",
+      "name": "初診誘導-オートウェビナー_視聴中_滞在率100%",
+      "folder": "初診誘導-オートウェビナー-視聴維持率"
+    },
+    {
+      "id": "tag:9445391",
+      "kind": "tag",
+      "name": "オートウェビナー-ファネル終了後 > 次の日からステップ配信開始",
+      "folder": "オートウェビナー-検討〜予約クリック"
+    },
+    {
+      "id": "tag:9437208",
+      "kind": "tag",
+      "name": "オートウェビナー-検討中",
+      "folder": "オートウェビナー-検討〜予約クリック"
+    },
+    {
+      "id": "tag:9437209",
+      "kind": "tag",
+      "name": "カウンセリング誘導-オートウェビナー-申込済み",
+      "folder": "オートウェビナー-検討〜予約クリック"
+    },
+    {
+      "id": "tag:9437210",
+      "kind": "tag",
+      "name": "オートウェビナー-参加",
+      "folder": "オートウェビナー-検討〜予約クリック"
+    },
+    {
+      "id": "tag:9437211",
+      "kind": "tag",
+      "name": "オートウェビナー経由-予約ボタンクリック",
+      "folder": "オートウェビナー-検討〜予約クリック"
+    },
+    {
+      "id": "tag:9445944",
+      "kind": "tag",
+      "name": "予約後-オートウェビナー-申込済み",
+      "folder": "予約後-オートウェビナー"
+    },
+    {
+      "id": "tag:9437298",
+      "kind": "tag",
+      "name": "初診後説明-オートウェビナー_視聴中_滞在率0%",
+      "folder": "初診後説明-オートウェビナー-視聴維持率"
+    },
+    {
+      "id": "tag:9437296",
+      "kind": "tag",
+      "name": "初診後説明-オートウェビナー_視聴中_滞在率5%",
+      "folder": "初診後説明-オートウェビナー-視聴維持率"
+    },
+    {
+      "id": "tag:9437295",
+      "kind": "tag",
+      "name": "初診後説明-オートウェビナー_視聴中_滞在率10%",
+      "folder": "初診後説明-オートウェビナー-視聴維持率"
+    },
+    {
+      "id": "tag:9437294",
+      "kind": "tag",
+      "name": "初診後説明-オートウェビナー_視聴中_滞在率25%",
+      "folder": "初診後説明-オートウェビナー-視聴維持率"
+    },
+    {
+      "id": "tag:9437292",
+      "kind": "tag",
+      "name": "初診後説明-オートウェビナー_視聴中_滞在率50%",
+      "folder": "初診後説明-オートウェビナー-視聴維持率"
+    },
+    {
+      "id": "tag:9437291",
+      "kind": "tag",
+      "name": "初診後説明-オートウェビナー_視聴中_滞在率75%",
+      "folder": "初診後説明-オートウェビナー-視聴維持率"
+    },
+    {
+      "id": "tag:9437290",
+      "kind": "tag",
+      "name": "初診後説明-オートウェビナー_視聴中_滞在率90%",
+      "folder": "初診後説明-オートウェビナー-視聴維持率"
+    },
+    {
+      "id": "tag:9437287",
+      "kind": "tag",
+      "name": "初診後説明-オートウェビナー_視聴中_滞在率100%",
+      "folder": "初診後説明-オートウェビナー-視聴維持率"
+    },
+    {
+      "id": "tag:9476608",
+      "kind": "tag",
+      "name": "送信済み",
+      "folder": "初診相談後の資料5枚の画像"
+    },
+    {
+      "id": "tag:9398073",
+      "kind": "tag",
+      "name": "1- 札幌-QRスキャン-初診後 → 精密 予約検討",
+      "folder": "患者様予約ステータス-QRスキャン"
+    },
+    {
+      "id": "tag:9398074",
+      "kind": "tag",
+      "name": "2- 札幌-QRスキャン-初診後 → 精密 予約済み",
+      "folder": "患者様予約ステータス-QRスキャン"
+    },
+    {
+      "id": "tag:9398075",
+      "kind": "tag",
+      "name": "3- 札幌-QRスキャン-精密後 → 契約 検討",
+      "folder": "患者様予約ステータス-QRスキャン"
+    },
+    {
+      "id": "tag:9398076",
+      "kind": "tag",
+      "name": "4- 札幌-QRスキャン-精密後 → 契約 済み",
+      "folder": "患者様予約ステータス-QRスキャン"
+    },
+    {
+      "id": "tag:9398077",
+      "kind": "tag",
+      "name": "1- 日本橋-QRスキャン-初診後 → 精密 予約検討",
+      "folder": "患者様予約ステータス-QRスキャン"
+    },
+    {
+      "id": "tag:9398078",
+      "kind": "tag",
+      "name": "2- 日本橋-QRスキャン-初診後 → 精密 予約済み",
+      "folder": "患者様予約ステータス-QRスキャン"
+    },
+    {
+      "id": "tag:9398079",
+      "kind": "tag",
+      "name": "3- 日本橋-QRスキャン-精密後 → 契約 検討",
+      "folder": "患者様予約ステータス-QRスキャン"
+    },
+    {
+      "id": "tag:9398080",
+      "kind": "tag",
+      "name": "4- 日本橋-QRスキャン-精密後 → 契約 済み",
+      "folder": "患者様予約ステータス-QRスキャン"
+    },
+    {
+      "id": "tag:9398081",
+      "kind": "tag",
+      "name": "1- 名駅-QRスキャン-初診後 → 精密 予約検討",
+      "folder": "患者様予約ステータス-QRスキャン"
+    },
+    {
+      "id": "tag:9398082",
+      "kind": "tag",
+      "name": "2- 名駅-QRスキャン-初診後 → 精密 予約済み",
+      "folder": "患者様予約ステータス-QRスキャン"
+    },
+    {
+      "id": "tag:9398083",
+      "kind": "tag",
+      "name": "3- 名駅-QRスキャン-精密後 → 契約 検討",
+      "folder": "患者様予約ステータス-QRスキャン"
+    },
+    {
+      "id": "tag:9398084",
+      "kind": "tag",
+      "name": "4- 名駅-QRスキャン-精密後 → 契約 済み",
+      "folder": "患者様予約ステータス-QRスキャン"
+    },
+    {
+      "id": "tag:9398085",
+      "kind": "tag",
+      "name": "1- 心斎橋-QRスキャン-初診後 → 精密 予約検討",
+      "folder": "患者様予約ステータス-QRスキャン"
+    },
+    {
+      "id": "tag:9398086",
+      "kind": "tag",
+      "name": "2- 心斎橋-QRスキャン-初診後 → 精密 予約済み",
+      "folder": "患者様予約ステータス-QRスキャン"
+    },
+    {
+      "id": "tag:9398087",
+      "kind": "tag",
+      "name": "3- 心斎橋-QRスキャン-精密後 → 契約 検討",
+      "folder": "患者様予約ステータス-QRスキャン"
+    },
+    {
+      "id": "tag:9398088",
+      "kind": "tag",
+      "name": "4- 心斎橋-QRスキャン-精密後 → 契約 済み",
+      "folder": "患者様予約ステータス-QRスキャン"
+    },
+    {
+      "id": "tag:9398089",
+      "kind": "tag",
+      "name": "1- 福岡-QRスキャン-初診後 → 精密 予約検討",
+      "folder": "患者様予約ステータス-QRスキャン"
+    },
+    {
+      "id": "tag:9398090",
+      "kind": "tag",
+      "name": "2- 福岡-QRスキャン-初診後 → 精密 予約済み",
+      "folder": "患者様予約ステータス-QRスキャン"
+    },
+    {
+      "id": "tag:9398091",
+      "kind": "tag",
+      "name": "3- 福岡-QRスキャン-精密後 → 契約 検討",
+      "folder": "患者様予約ステータス-QRスキャン"
+    },
+    {
+      "id": "tag:9398092",
+      "kind": "tag",
+      "name": "4- 福岡-QRスキャン-精密後 → 契約 済み",
+      "folder": "患者様予約ステータス-QRスキャン"
+    },
+    {
+      "id": "tag:8998883",
+      "kind": "tag",
+      "name": "福岡MA-YT-症例解説-タップ",
+      "folder": "YouTube URL"
+    },
+    {
+      "id": "tag:8998882",
+      "kind": "tag",
+      "name": "福岡MA-YT-Shorts-タップ",
+      "folder": "YouTube URL"
+    },
+    {
+      "id": "tag:8361979",
+      "kind": "tag",
+      "name": "院長矯正相談-通知を受け取る",
+      "folder": "院長矯正相談"
+    },
+    {
+      "id": "tag:8361974",
+      "kind": "tag",
+      "name": "院長矯正相談-通知を受け取らない",
+      "folder": "院長矯正相談"
+    },
+    {
+      "id": "tag:8354715",
+      "kind": "tag",
+      "name": "一斉送信-優先通知を受け取る-タップ",
+      "folder": "院長矯正相談"
+    },
+    {
+      "id": "tag:8354714",
+      "kind": "tag",
+      "name": "一斉送信-院長矯正相談の通知を受け取らない-タップ",
+      "folder": "院長矯正相談"
+    },
+    {
+      "id": "tag:8354713",
+      "kind": "tag",
+      "name": "リマインド-キャンセル-タップ",
+      "folder": "院長矯正相談"
+    },
+    {
+      "id": "tag:8354712",
+      "kind": "tag",
+      "name": "リマインド未反応",
+      "folder": "院長矯正相談"
+    },
+    {
+      "id": "tag:8354711",
+      "kind": "tag",
+      "name": "リマインド反応済み",
+      "folder": "院長矯正相談"
+    },
+    {
+      "id": "tag:8354709",
+      "kind": "tag",
+      "name": "① 感想を質問済み",
+      "folder": "口コミ依頼"
+    },
+    {
+      "id": "tag:8354708",
+      "kind": "tag",
+      "name": "② 感想: × ダメだった",
+      "folder": "口コミ依頼"
+    },
+    {
+      "id": "tag:8354705",
+      "kind": "tag",
+      "name": "② 感想: △ まあまあだった",
+      "folder": "口コミ依頼"
+    },
+    {
+      "id": "tag:8354701",
+      "kind": "tag",
+      "name": "② 感想: ◯ とても良かった",
+      "folder": "口コミ依頼"
+    },
+    {
+      "id": "tag:8354703",
+      "kind": "tag",
+      "name": "③ 口コミ依頼をタップ",
+      "folder": "口コミ依頼"
+    },
+    {
+      "id": "tag:8354707",
+      "kind": "tag",
+      "name": "③ △×フォーム開封",
+      "folder": "口コミ依頼"
+    },
+    {
+      "id": "tag:8354704",
+      "kind": "tag",
+      "name": "③ 口コミ依頼を投稿しないをタップ",
+      "folder": "口コミ依頼"
+    },
+    {
+      "id": "field:2510206",
+      "kind": "field",
+      "name": "相談用 LINE登録リンク",
+      "folder": "重要URL"
+    },
+    {
+      "id": "field:2361976",
+      "kind": "field",
+      "name": "予約URL-規定値-全体予約URL",
+      "folder": "重要URL"
+    },
+    {
+      "id": "field:2518734",
+      "kind": "field",
+      "name": "友だち登録日",
+      "folder": "登録時アンケート"
+    },
+    {
+      "id": "field:2361975",
+      "kind": "field",
+      "name": "福岡MA以外-予約URL-クリック回数",
+      "folder": "予約リンク-クリック回数"
+    },
+    {
+      "id": "field:2361974",
+      "kind": "field",
+      "name": "福岡MA-予約URL-クリック回数",
+      "folder": "予約リンク-クリック回数"
+    },
+    {
+      "id": "field:2522624",
+      "kind": "field",
+      "name": "予約後-ウェビナー申込日",
+      "folder": "オートウェビナー"
+    },
+    {
+      "id": "field:2522433",
+      "kind": "field",
+      "name": "カウンセリング誘導-ウェビナー申込日",
+      "folder": "オートウェビナー"
+    },
+    {
+      "id": "field:2519952",
+      "kind": "field",
+      "name": "ウェビナー-名前",
+      "folder": "オートウェビナー"
+    },
+    {
+      "id": "field:2519948",
+      "kind": "field",
+      "name": "ウェビナー参加URL",
+      "folder": "オートウェビナー"
+    },
+    {
+      "id": "field:2519903",
+      "kind": "field",
+      "name": "フェーズ移行_①_日時（①初診-検討）",
+      "folder": "📅 初診獲得"
+    },
+    {
+      "id": "field:2519901",
+      "kind": "field",
+      "name": "フェーズ移行_②_日時（②カウンセリング誘導#1-検討）",
+      "folder": "📅 初診獲得"
+    },
+    {
+      "id": "field:2519900",
+      "kind": "field",
+      "name": "フェーズ移行_③_日時（③オートウェビナー-検討）",
+      "folder": "📅 初診獲得"
+    },
+    {
+      "id": "field:2519899",
+      "kind": "field",
+      "name": "フェーズ移行_④_日時（④ステップ配信-検討）",
+      "folder": "📅 初診獲得"
+    },
+    {
+      "id": "field:2519898",
+      "kind": "field",
+      "name": "フェーズ移行_⑤_日時（⑤カウンセリング誘導#2-検討）",
+      "folder": "📅 初診獲得"
+    },
+    {
+      "id": "field:2519897",
+      "kind": "field",
+      "name": "フェーズ移行_⑥_日時（⑥初診-予約済み）",
+      "folder": "📅 初診獲得"
+    },
+    {
+      "id": "field:2519895",
+      "kind": "field",
+      "name": "患者様-初診予約までの状況",
+      "folder": "患者様予約ステータス"
+    },
+    {
+      "id": "field:2509995",
+      "kind": "field",
+      "name": "患者様予約ステータス",
+      "folder": "患者様予約ステータス"
+    },
+    {
+      "id": "field:2518786",
+      "kind": "field",
+      "name": "精密-予約タップ-配信STOP-30日後リマインド-送信日",
+      "folder": "📅 離脱防止"
+    },
+    {
+      "id": "field:2518784",
+      "kind": "field",
+      "name": "契約-予約タップ-配信STOP-30日後リマインド-送信日",
+      "folder": "📅 離脱防止"
+    },
+    {
+      "id": "field:2518754",
+      "kind": "field",
+      "name": "フェーズ移行_①_日時（① 初診-検討）",
+      "folder": "📅 離脱防止"
+    },
+    {
+      "id": "field:2518753",
+      "kind": "field",
+      "name": "フェーズ移行_②_日時（② 初診-予約済み）",
+      "folder": "📅 離脱防止"
+    },
+    {
+      "id": "field:2518752",
+      "kind": "field",
+      "name": "フェーズ移行_③_日時（③ 精密-検討）",
+      "folder": "📅 離脱防止"
+    },
+    {
+      "id": "field:2518751",
+      "kind": "field",
+      "name": "フェーズ移行_④_日時（④ 精密-予約タップ-配信STOP）",
+      "folder": "📅 離脱防止"
+    },
+    {
+      "id": "field:2518750",
+      "kind": "field",
+      "name": "フェーズ移行_⑤_日時（⑤ 精密-予約済み）",
+      "folder": "📅 離脱防止"
+    },
+    {
+      "id": "field:2518749",
+      "kind": "field",
+      "name": "フェーズ移行_⑥_日時（⑥ 契約-検討）",
+      "folder": "📅 離脱防止"
+    },
+    {
+      "id": "field:2518748",
+      "kind": "field",
+      "name": "フェーズ移行_⑦_日時（⑦ 契約-予約タップ-配信STOP）",
+      "folder": "📅 離脱防止"
+    },
+    {
+      "id": "field:2518747",
+      "kind": "field",
+      "name": "フェーズ移行_⑧_日時（⑧ 契約）",
+      "folder": "📅 離脱防止"
+    },
+    {
+      "id": "field:2518746",
+      "kind": "field",
+      "name": "契約検討_配信1_日時",
+      "folder": "📅 離脱防止"
+    },
+    {
+      "id": "field:2518745",
+      "kind": "field",
+      "name": "契約検討_配信2_日時",
+      "folder": "📅 離脱防止"
+    },
+    {
+      "id": "field:2518744",
+      "kind": "field",
+      "name": "契約検討_配信3_日時",
+      "folder": "📅 離脱防止"
+    },
+    {
+      "id": "field:2518743",
+      "kind": "field",
+      "name": "契約検討_配信4_日時",
+      "folder": "📅 離脱防止"
+    },
+    {
+      "id": "field:2518742",
+      "kind": "field",
+      "name": "契約検討_配信5_日時",
+      "folder": "📅 離脱防止"
+    },
+    {
+      "id": "field:2518741",
+      "kind": "field",
+      "name": "契約検討_最終配信_日時",
+      "folder": "📅 離脱防止"
+    },
+    {
+      "id": "field:2518740",
+      "kind": "field",
+      "name": "精密検討_配信1_日時",
+      "folder": "📅 離脱防止"
+    },
+    {
+      "id": "field:2518739",
+      "kind": "field",
+      "name": "精密検討_配信2_日時",
+      "folder": "📅 離脱防止"
+    },
+    {
+      "id": "field:2518738",
+      "kind": "field",
+      "name": "精密検討_配信3_日時",
+      "folder": "📅 離脱防止"
+    },
+    {
+      "id": "field:2518737",
+      "kind": "field",
+      "name": "精密検討_配信4_日時",
+      "folder": "📅 離脱防止"
+    },
+    {
+      "id": "field:2518736",
+      "kind": "field",
+      "name": "精密検討_配信5_日時",
+      "folder": "📅 離脱防止"
+    },
+    {
+      "id": "field:2518735",
+      "kind": "field",
+      "name": "精密検討_最終配信_日時",
+      "folder": "📅 離脱防止"
+    },
+    {
+      "id": "field:2249645",
+      "kind": "field",
+      "name": "院長矯正相談-予約日",
+      "folder": "院長矯正相談-予約日"
+    },
+    {
+      "id": "field:2203727",
+      "kind": "field",
+      "name": "今までの装着時間",
+      "folder": "装着時間チェッカー"
+    },
+    {
+      "id": "field:2203725",
+      "kind": "field",
+      "name": "チェック回数",
+      "folder": "装着時間チェッカー"
+    },
+    {
+      "id": "field:2249646",
+      "kind": "field",
+      "name": "矯正歯科-動画-タップ数",
+      "folder": "リッチ④"
+    },
+    {
+      "id": "template:YouTube紹介-福岡MA",
+      "kind": "template",
+      "name": "YouTube紹介-福岡MA"
+    },
+    {
+      "id": "template:噛み合わない#1",
+      "kind": "template",
+      "name": "噛み合わない#1"
+    },
+    {
+      "id": "template:噛み合わない#2",
+      "kind": "template",
+      "name": "噛み合わない#2"
+    },
+    {
+      "id": "template:噛み合わない#3",
+      "kind": "template",
+      "name": "噛み合わない#3"
+    },
+    {
+      "id": "template:噛み合わない#4",
+      "kind": "template",
+      "name": "噛み合わない#4"
+    },
+    {
+      "id": "template:ステップ配信後-予約誘導-カウン...",
+      "kind": "template",
+      "name": "ステップ配信後-予約誘導-カウン..."
+    },
+    {
+      "id": "template:正中#1",
+      "kind": "template",
+      "name": "正中#1"
+    },
+    {
+      "id": "template:正中#2",
+      "kind": "template",
+      "name": "正中#2"
+    },
+    {
+      "id": "template:正中#3",
+      "kind": "template",
+      "name": "正中#3"
+    },
+    {
+      "id": "template:正中#4",
+      "kind": "template",
+      "name": "正中#4"
+    },
+    {
+      "id": "template:八重歯#1",
+      "kind": "template",
+      "name": "八重歯#1"
+    },
+    {
+      "id": "template:八重歯#2",
+      "kind": "template",
+      "name": "八重歯#2"
+    },
+    {
+      "id": "template:八重歯#3",
+      "kind": "template",
+      "name": "八重歯#3"
+    },
+    {
+      "id": "template:八重歯#4",
+      "kind": "template",
+      "name": "八重歯#4"
+    },
+    {
+      "id": "template:受け口#1",
+      "kind": "template",
+      "name": "受け口#1"
+    },
+    {
+      "id": "template:受け口#2",
+      "kind": "template",
+      "name": "受け口#2"
+    },
+    {
+      "id": "template:受け口#3",
+      "kind": "template",
+      "name": "受け口#3"
+    },
+    {
+      "id": "template:受け口#4",
+      "kind": "template",
+      "name": "受け口#4"
+    },
+    {
+      "id": "template:すきっ歯#1",
+      "kind": "template",
+      "name": "すきっ歯#1"
+    },
+    {
+      "id": "template:すきっ歯#2",
+      "kind": "template",
+      "name": "すきっ歯#2"
+    },
+    {
+      "id": "template:すきっ歯#3",
+      "kind": "template",
+      "name": "すきっ歯#3"
+    },
+    {
+      "id": "template:すきっ歯#4",
+      "kind": "template",
+      "name": "すきっ歯#4"
+    },
+    {
+      "id": "template:口唇#1",
+      "kind": "template",
+      "name": "口唇#1"
+    },
+    {
+      "id": "template:口唇#2",
+      "kind": "template",
+      "name": "口唇#2"
+    },
+    {
+      "id": "template:口唇#3",
+      "kind": "template",
+      "name": "口唇#3"
+    },
+    {
+      "id": "template:口唇#4",
+      "kind": "template",
+      "name": "口唇#4"
+    },
+    {
+      "id": "template:抜歯窩#1",
+      "kind": "template",
+      "name": "抜歯窩#1"
+    },
+    {
+      "id": "template:抜歯窩#2",
+      "kind": "template",
+      "name": "抜歯窩#2"
+    },
+    {
+      "id": "template:抜歯窩#3",
+      "kind": "template",
+      "name": "抜歯窩#3"
+    },
+    {
+      "id": "template:抜歯窩#4",
+      "kind": "template",
+      "name": "抜歯窩#4"
+    },
+    {
+      "id": "template:叢生#1",
+      "kind": "template",
+      "name": "叢生#1"
+    },
+    {
+      "id": "template:叢生#2",
+      "kind": "template",
+      "name": "叢生#2"
+    },
+    {
+      "id": "template:叢生#3",
+      "kind": "template",
+      "name": "叢生#3"
+    },
+    {
+      "id": "template:叢生#4",
+      "kind": "template",
+      "name": "叢生#4"
+    },
+    {
+      "id": "template:出っ歯#1",
+      "kind": "template",
+      "name": "出っ歯#1"
+    },
+    {
+      "id": "template:出っ歯#2",
+      "kind": "template",
+      "name": "出っ歯#2"
+    },
+    {
+      "id": "template:出っ歯#3",
+      "kind": "template",
+      "name": "出っ歯#3"
+    },
+    {
+      "id": "template:出っ歯#4",
+      "kind": "template",
+      "name": "出っ歯#4"
+    },
+    {
+      "id": "template:当日1時間後",
+      "kind": "template",
+      "name": "当日1時間後"
+    },
+    {
+      "id": "template:1日後",
+      "kind": "template",
+      "name": "1日後"
+    },
+    {
+      "id": "template:3日後",
+      "kind": "template",
+      "name": "3日後"
+    },
+    {
+      "id": "template:4️⃣ ⑦ 契約-予約タップ-配...",
+      "kind": "template",
+      "name": "4️⃣ ⑦ 契約-予約タップ-配..."
+    },
+    {
+      "id": "template:【精密→契約検討】当日 19",
+      "kind": "template",
+      "name": "【精密→契約検討】当日 19"
+    },
+    {
+      "id": "template:【精密→契約検討】1日後 19",
+      "kind": "template",
+      "name": "【精密→契約検討】1日後 19"
+    },
+    {
+      "id": "template:【精密→契約検討】3日後 19",
+      "kind": "template",
+      "name": "【精密→契約検討】3日後 19"
+    },
+    {
+      "id": "template:【精密→契約検討】7日後 19",
+      "kind": "template",
+      "name": "【精密→契約検討】7日後 19"
+    },
+    {
+      "id": "template:【精密→契約検討】14日後 19...",
+      "kind": "template",
+      "name": "【精密→契約検討】14日後 19..."
+    },
+    {
+      "id": "template:3️⃣ ④ 精密-予約タップ-配...",
+      "kind": "template",
+      "name": "3️⃣ ④ 精密-予約タップ-配..."
+    },
+    {
+      "id": "template:【初診→精密検討】当日 19",
+      "kind": "template",
+      "name": "【初診→精密検討】当日 19"
+    },
+    {
+      "id": "template:【初診→精密検討】1日後 19",
+      "kind": "template",
+      "name": "【初診→精密検討】1日後 19"
+    },
+    {
+      "id": "template:【初診→精密検討】3日後 19",
+      "kind": "template",
+      "name": "【初診→精密検討】3日後 19"
+    },
+    {
+      "id": "template:【初診→精密検討】7日後 19",
+      "kind": "template",
+      "name": "【初診→精密検討】7日後 19"
+    },
+    {
+      "id": "template:【初診→精密検討】14日後 19...",
+      "kind": "template",
+      "name": "【初診→精密検討】14日後 19..."
+    },
+    {
+      "id": "template:カウンセリング誘導#1 1時間後...",
+      "kind": "template",
+      "name": "カウンセリング誘導#1 1時間後..."
+    },
+    {
+      "id": "template:友だち情報 [フェーズ移行_③_日時...",
+      "kind": "template",
+      "name": "友だち情報 [フェーズ移行_③_日時..."
+    },
+    {
+      "id": "template:症例投稿始まることの予告",
+      "kind": "template",
+      "name": "症例投稿始まることの予告"
+    },
+    {
+      "id": "template:友だち情報 [フェーズ移行_④_日時...",
+      "kind": "template",
+      "name": "友だち情報 [フェーズ移行_④_日時..."
+    },
+    {
+      "id": "template:友だち情報 [フェーズ移行_⑤_日時...",
+      "kind": "template",
+      "name": "友だち情報 [フェーズ移行_⑤_日時..."
+    }
+  ],
+  "edges": [
+    {
+      "from": "scenario:1129228",
+      "to": "template:YouTube紹介-福岡MA",
+      "label": "step0"
+    },
+    {
+      "from": "scenario:1075762",
+      "to": "template:噛み合わない#1",
+      "label": "step0"
+    },
+    {
+      "from": "scenario:1075762",
+      "to": "template:噛み合わない#2",
+      "label": "step1"
+    },
+    {
+      "from": "scenario:1075762",
+      "to": "template:噛み合わない#3",
+      "label": "step2"
+    },
+    {
+      "from": "scenario:1075762",
+      "to": "template:噛み合わない#4",
+      "label": "step3"
+    },
+    {
+      "from": "scenario:1075762",
+      "to": "template:ステップ配信後-予約誘導-カウン...",
+      "label": "step4"
+    },
+    {
+      "from": "scenario:1075761",
+      "to": "template:正中#1",
+      "label": "step0"
+    },
+    {
+      "from": "scenario:1075761",
+      "to": "template:正中#2",
+      "label": "step1"
+    },
+    {
+      "from": "scenario:1075761",
+      "to": "template:正中#3",
+      "label": "step2"
+    },
+    {
+      "from": "scenario:1075761",
+      "to": "template:正中#4",
+      "label": "step3"
+    },
+    {
+      "from": "scenario:1075761",
+      "to": "template:ステップ配信後-予約誘導-カウン...",
+      "label": "step4"
+    },
+    {
+      "from": "scenario:1075758",
+      "to": "template:八重歯#1",
+      "label": "step0"
+    },
+    {
+      "from": "scenario:1075758",
+      "to": "template:八重歯#2",
+      "label": "step1"
+    },
+    {
+      "from": "scenario:1075758",
+      "to": "template:八重歯#3",
+      "label": "step2"
+    },
+    {
+      "from": "scenario:1075758",
+      "to": "template:八重歯#4",
+      "label": "step3"
+    },
+    {
+      "from": "scenario:1075758",
+      "to": "template:ステップ配信後-予約誘導-カウン...",
+      "label": "step4"
+    },
+    {
+      "from": "scenario:1075757",
+      "to": "template:受け口#1",
+      "label": "step0"
+    },
+    {
+      "from": "scenario:1075757",
+      "to": "template:受け口#2",
+      "label": "step1"
+    },
+    {
+      "from": "scenario:1075757",
+      "to": "template:受け口#3",
+      "label": "step2"
+    },
+    {
+      "from": "scenario:1075757",
+      "to": "template:受け口#4",
+      "label": "step3"
+    },
+    {
+      "from": "scenario:1075757",
+      "to": "template:ステップ配信後-予約誘導-カウン...",
+      "label": "step4"
+    },
+    {
+      "from": "scenario:1075756",
+      "to": "template:すきっ歯#1",
+      "label": "step0"
+    },
+    {
+      "from": "scenario:1075756",
+      "to": "template:すきっ歯#2",
+      "label": "step1"
+    },
+    {
+      "from": "scenario:1075756",
+      "to": "template:すきっ歯#3",
+      "label": "step2"
+    },
+    {
+      "from": "scenario:1075756",
+      "to": "template:すきっ歯#4",
+      "label": "step3"
+    },
+    {
+      "from": "scenario:1075756",
+      "to": "template:ステップ配信後-予約誘導-カウン...",
+      "label": "step4"
+    },
+    {
+      "from": "scenario:1075755",
+      "to": "template:口唇#1",
+      "label": "step0"
+    },
+    {
+      "from": "scenario:1075755",
+      "to": "template:口唇#2",
+      "label": "step1"
+    },
+    {
+      "from": "scenario:1075755",
+      "to": "template:口唇#3",
+      "label": "step2"
+    },
+    {
+      "from": "scenario:1075755",
+      "to": "template:口唇#4",
+      "label": "step3"
+    },
+    {
+      "from": "scenario:1075755",
+      "to": "template:ステップ配信後-予約誘導-カウン...",
+      "label": "step4"
+    },
+    {
+      "from": "scenario:1075754",
+      "to": "template:抜歯窩#1",
+      "label": "step0"
+    },
+    {
+      "from": "scenario:1075754",
+      "to": "template:抜歯窩#2",
+      "label": "step1"
+    },
+    {
+      "from": "scenario:1075754",
+      "to": "template:抜歯窩#3",
+      "label": "step2"
+    },
+    {
+      "from": "scenario:1075754",
+      "to": "template:抜歯窩#4",
+      "label": "step3"
+    },
+    {
+      "from": "scenario:1075754",
+      "to": "template:ステップ配信後-予約誘導-カウン...",
+      "label": "step4"
+    },
+    {
+      "from": "scenario:1075706",
+      "to": "template:叢生#1",
+      "label": "step0"
+    },
+    {
+      "from": "scenario:1075706",
+      "to": "template:叢生#2",
+      "label": "step1"
+    },
+    {
+      "from": "scenario:1075706",
+      "to": "template:叢生#3",
+      "label": "step2"
+    },
+    {
+      "from": "scenario:1075706",
+      "to": "template:叢生#4",
+      "label": "step3"
+    },
+    {
+      "from": "scenario:1075706",
+      "to": "template:ステップ配信後-予約誘導-カウン...",
+      "label": "step4"
+    },
+    {
+      "from": "scenario:1075704",
+      "to": "template:出っ歯#1",
+      "label": "step0"
+    },
+    {
+      "from": "scenario:1075704",
+      "to": "template:出っ歯#2",
+      "label": "step1"
+    },
+    {
+      "from": "scenario:1075704",
+      "to": "template:出っ歯#3",
+      "label": "step2"
+    },
+    {
+      "from": "scenario:1075704",
+      "to": "template:出っ歯#4",
+      "label": "step3"
+    },
+    {
+      "from": "scenario:1168147",
+      "to": "template:当日1時間後",
+      "label": "step1"
+    },
+    {
+      "from": "scenario:1168147",
+      "to": "template:1日後",
+      "label": "step2"
+    },
+    {
+      "from": "scenario:1168147",
+      "to": "template:3日後",
+      "label": "step3"
+    },
+    {
+      "from": "scenario:1164712",
+      "to": "template:4️⃣ ⑦ 契約-予約タップ-配...",
+      "label": "step0"
+    },
+    {
+      "from": "scenario:1164710",
+      "to": "template:【精密→契約検討】当日 19",
+      "label": "step0"
+    },
+    {
+      "from": "scenario:1164710",
+      "to": "template:【精密→契約検討】1日後 19",
+      "label": "step1"
+    },
+    {
+      "from": "scenario:1164710",
+      "to": "template:【精密→契約検討】3日後 19",
+      "label": "step2"
+    },
+    {
+      "from": "scenario:1164710",
+      "to": "template:【精密→契約検討】7日後 19",
+      "label": "step3"
+    },
+    {
+      "from": "scenario:1164710",
+      "to": "template:【精密→契約検討】14日後 19...",
+      "label": "step4"
+    },
+    {
+      "from": "scenario:1164710",
+      "to": "template:4️⃣ ⑦ 契約-予約タップ-配...",
+      "label": "step5"
+    },
+    {
+      "from": "scenario:1164709",
+      "to": "template:3️⃣ ④ 精密-予約タップ-配...",
+      "label": "step0"
+    },
+    {
+      "from": "scenario:1162434",
+      "to": "template:【初診→精密検討】当日 19",
+      "label": "step0"
+    },
+    {
+      "from": "scenario:1162434",
+      "to": "template:【初診→精密検討】1日後 19",
+      "label": "step1"
+    },
+    {
+      "from": "scenario:1162434",
+      "to": "template:【初診→精密検討】3日後 19",
+      "label": "step2"
+    },
+    {
+      "from": "scenario:1162434",
+      "to": "template:【初診→精密検討】7日後 19",
+      "label": "step3"
+    },
+    {
+      "from": "scenario:1162434",
+      "to": "template:【初診→精密検討】14日後 19...",
+      "label": "step4"
+    },
+    {
+      "from": "scenario:1162434",
+      "to": "template:3️⃣ ④ 精密-予約タップ-配...",
+      "label": "step5"
+    },
+    {
+      "from": "scenario:1165667",
+      "to": "template:カウンセリング誘導#1 1時間後...",
+      "label": "step1"
+    },
+    {
+      "from": "scenario:1165667",
+      "to": "template:友だち情報 [フェーズ移行_③_日時...",
+      "label": "step2"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:症例投稿始まることの予告",
+      "label": "step8"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:友だち情報 [フェーズ移行_④_日時...",
+      "label": "step9"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:出っ歯#1",
+      "label": "step10"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:叢生#1",
+      "label": "step11"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:抜歯窩#1",
+      "label": "step12"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:口唇#1",
+      "label": "step13"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:すきっ歯#1",
+      "label": "step14"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:受け口#1",
+      "label": "step15"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:八重歯#1",
+      "label": "step16"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:正中#1",
+      "label": "step17"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:噛み合わない#1",
+      "label": "step18"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:出っ歯#2",
+      "label": "step19"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:叢生#2",
+      "label": "step20"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:抜歯窩#2",
+      "label": "step21"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:口唇#2",
+      "label": "step22"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:すきっ歯#2",
+      "label": "step23"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:受け口#2",
+      "label": "step24"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:八重歯#2",
+      "label": "step25"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:正中#2",
+      "label": "step26"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:噛み合わない#2",
+      "label": "step27"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:出っ歯#3",
+      "label": "step28"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:叢生#3",
+      "label": "step29"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:抜歯窩#3",
+      "label": "step30"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:口唇#3",
+      "label": "step31"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:すきっ歯#3",
+      "label": "step32"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:受け口#3",
+      "label": "step33"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:八重歯#3",
+      "label": "step34"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:正中#3",
+      "label": "step35"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:噛み合わない#3",
+      "label": "step36"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:出っ歯#4",
+      "label": "step37"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:叢生#4",
+      "label": "step38"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:抜歯窩#4",
+      "label": "step39"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:口唇#4",
+      "label": "step40"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:すきっ歯#4",
+      "label": "step41"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:受け口#4",
+      "label": "step42"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:八重歯#4",
+      "label": "step43"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:正中#4",
+      "label": "step44"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:噛み合わない#4",
+      "label": "step45"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:友だち情報 [フェーズ移行_⑤_日時...",
+      "label": "step46"
+    },
+    {
+      "from": "scenario:1165656",
+      "to": "template:ステップ配信後-予約誘導-カウン...",
+      "label": "step47"
+    }
+  ],
+  "builtAt": "2026-03-21T02:43:27.458Z"
+}

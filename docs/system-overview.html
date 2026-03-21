@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lステップ全体構成マップ</title>
+<style>
+  :root {
+    --blue: #2563eb; --blue-light: #dbeafe; --blue-50: #eff6ff;
+    --green: #16a34a; --green-light: #dcfce7;
+    --orange: #ea580c; --orange-light: #ffedd5;
+    --purple: #9333ea; --purple-light: #f3e8ff;
+    --pink: #db2777; --pink-light: #fce7f3;
+    --gray: #6b7280; --gray-light: #f3f4f6; --gray-border: #e5e7eb;
+    --teal: #0d9488; --teal-light: #ccfbf1;
+    --red: #dc2626; --red-light: #fee2e2;
+    --yellow: #ca8a04; --yellow-light: #fef9c3;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif; background: #f8fafc; color: #1e293b; line-height: 1.8; }
+
+  .container { max-width: 1200px; margin: 0 auto; padding: 24px; }
+
+  /* Header */
+  .header { text-align: center; padding: 48px 24px 36px; background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%); color: white; border-radius: 16px; margin-bottom: 32px; }
+  .header h1 { font-size: 28px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.85; }
+  .header .meta { margin-top: 16px; font-size: 13px; opacity: 0.7; }
+
+  /* 30-sec Summary */
+  .summary-box { background: linear-gradient(135deg, #fef9c3 0%, #fde68a 100%); border: 2px solid #f59e0b; border-radius: 14px; padding: 28px 32px; margin-bottom: 32px; }
+  .summary-box h2 { font-size: 18px; color: #92400e; margin-bottom: 12px; }
+  .summary-box .tldr { font-size: 15px; color: #78350f; font-weight: 600; margin-bottom: 16px; line-height: 1.9; }
+  .summary-box .analogy { background: white; border-radius: 10px; padding: 16px 20px; margin-top: 12px; }
+  .summary-box .analogy h4 { font-size: 14px; color: #92400e; margin-bottom: 8px; }
+  .summary-box .analogy-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 13px; }
+  .summary-box .analogy-grid .col-header { font-weight: 700; color: #78350f; border-bottom: 1px solid #fbbf24; padding-bottom: 4px; margin-bottom: 4px; }
+  .summary-box .analogy-item { display: flex; gap: 8px; align-items: start; }
+  .analogy-icon { font-size: 18px; flex-shrink: 0; width: 28px; text-align: center; }
+
+  /* TOC */
+  .toc { background: white; border-radius: 12px; padding: 24px; margin-bottom: 32px; border: 1px solid var(--gray-border); }
+  .toc h2 { font-size: 16px; margin-bottom: 12px; color: var(--blue); }
+  .toc ol { padding-left: 24px; }
+  .toc li { margin-bottom: 6px; }
+  .toc a { color: var(--blue); text-decoration: none; font-size: 14px; }
+  .toc a:hover { text-decoration: underline; }
+
+  /* Sections */
+  .section { background: white; border-radius: 12px; padding: 32px; margin-bottom: 24px; border: 1px solid var(--gray-border); }
+  .section h2 { font-size: 20px; margin-bottom: 6px; padding-bottom: 12px; border-bottom: 2px solid var(--blue); color: #1e293b; }
+  .section-lead { font-size: 13px; color: var(--gray); margin-bottom: 16px; background: var(--gray-light); padding: 10px 14px; border-radius: 8px; border-left: 3px solid var(--blue); }
+  .section h3 { font-size: 16px; margin: 20px 0 10px; color: #374151; }
+  .section p { font-size: 14px; color: #4b5563; margin-bottom: 12px; }
+
+  /* Glossary v2 */
+  .glossary { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 20px; }
+  .glossary-item { padding: 20px; border-radius: 12px; border-left: 5px solid; position: relative; }
+  .glossary-item .gi-icon { font-size: 28px; margin-bottom: 8px; }
+  .glossary-item h4 { font-size: 15px; margin-bottom: 6px; }
+  .glossary-item .gi-explain { font-size: 13px; margin: 0 0 8px; color: #4b5563; }
+  .glossary-item .gi-analogy { font-size: 12px; margin: 0; padding: 8px 10px; border-radius: 6px; background: rgba(255,255,255,0.7); }
+  .glossary-item .gi-analogy strong { color: #374151; }
+  .gi-scenario { background: var(--blue-light); border-color: var(--blue); }
+  .gi-scenario h4 { color: var(--blue); }
+  .gi-tag { background: var(--green-light); border-color: var(--green); }
+  .gi-tag h4 { color: var(--green); }
+  .gi-template { background: var(--orange-light); border-color: var(--orange); }
+  .gi-template h4 { color: var(--orange); }
+  .gi-field { background: var(--purple-light); border-color: var(--purple); }
+  .gi-field h4 { color: var(--purple); }
+
+  /* Vertical Timeline Flow */
+  .vflow { position: relative; padding: 0; margin: 8px 0 16px; }
+  .vflow-step { display: flex; align-items: stretch; margin-bottom: 0; position: relative; }
+  .vflow-left { width: 56px; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; }
+  .vflow-num { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; color: white; flex-shrink: 0; z-index: 1; }
+  .vflow-line { flex: 1; width: 3px; background: var(--gray-border); margin: 0 auto; min-height: 12px; }
+  .vflow-step:last-child .vflow-line { display: none; }
+  .vflow-body { flex: 1; padding: 0 0 20px 12px; }
+  .vflow-card { border-radius: 12px; padding: 16px 20px; border: 1px solid; }
+  .vflow-title { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+  .vflow-sub { font-size: 13px; color: #4b5563; margin-bottom: 8px; }
+  .vflow-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .vflow-tag { font-size: 11px; padding: 3px 10px; border-radius: 20px; font-weight: 600; white-space: nowrap; }
+  .vt-tag { background: var(--green-light); color: var(--green); }
+  .vt-template { background: var(--orange-light); color: var(--orange); }
+  .vt-field { background: var(--purple-light); color: var(--purple); }
+  .vt-action { background: var(--pink-light); color: var(--pink); }
+
+  .vn-blue { background: var(--blue); }
+  .vc-blue { background: var(--blue-50); border-color: #93c5fd; }
+  .vc-blue .vflow-title { color: var(--blue); }
+  .vn-green { background: var(--green); }
+  .vc-green { background: var(--green-light); border-color: #86efac; }
+  .vc-green .vflow-title { color: var(--green); }
+  .vn-orange { background: var(--orange); }
+  .vc-orange { background: var(--orange-light); border-color: #fdba74; }
+  .vc-orange .vflow-title { color: var(--orange); }
+  .vn-purple { background: var(--purple); }
+  .vc-purple { background: var(--purple-light); border-color: #c4b5fd; }
+  .vc-purple .vflow-title { color: var(--purple); }
+  .vn-pink { background: var(--pink); }
+  .vc-pink { background: var(--pink-light); border-color: #f9a8d4; }
+  .vc-pink .vflow-title { color: var(--pink); }
+  .vn-teal { background: var(--teal); }
+  .vc-teal { background: var(--teal-light); border-color: #5eead4; }
+  .vc-teal .vflow-title { color: var(--teal); }
+  .vn-red { background: var(--red); }
+  .vc-red { background: var(--red-light); border-color: #fca5a5; }
+  .vc-red .vflow-title { color: var(--red); }
+
+  /* Narrative blocks */
+  .narrative { background: var(--blue-50); border-radius: 10px; padding: 20px 24px; margin: 16px 0; border: 1px solid #bfdbfe; }
+  .narrative h4 { font-size: 14px; color: var(--blue); margin-bottom: 8px; }
+  .narrative p { font-size: 13px; color: #1e40af; margin: 0; }
+  .narrative ol { font-size: 13px; color: #1e40af; padding-left: 20px; }
+  .narrative li { margin-bottom: 4px; }
+
+  /* Tag Categories */
+  .tag-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px; }
+  .tag-card { border: 1px solid var(--gray-border); border-radius: 10px; overflow: hidden; }
+  .tag-card-header { padding: 12px 16px; font-size: 14px; font-weight: 700; color: white; display: flex; justify-content: space-between; align-items: center; }
+  .tag-card-header .count { font-size: 12px; font-weight: 400; opacity: 0.85; background: rgba(255,255,255,0.2); padding: 2px 8px; border-radius: 10px; }
+  .tag-card-body { padding: 12px 16px; }
+  .tag-card-body .where { font-size: 12px; color: var(--gray); margin-bottom: 8px; padding: 8px 12px; background: var(--gray-light); border-radius: 6px; line-height: 1.6; }
+  .tag-card-body .where strong { color: #374151; }
+  .tag-card-body .where .where-when { display: block; margin-top: 4px; font-style: italic; }
+  .tag-list { list-style: none; }
+  .tag-list li { font-size: 13px; padding: 4px 0; border-bottom: 1px solid #f1f5f9; display: flex; justify-content: space-between; }
+  .tag-list li:last-child { border-bottom: none; }
+  .tag-list .tag-name { color: #374151; }
+  .tag-list .tag-count { color: var(--gray); font-size: 12px; white-space: nowrap; margin-left: 8px; }
+  .tag-more { font-size: 12px; color: var(--blue); padding-top: 4px; }
+
+  .tc-green .tag-card-header { background: var(--green); }
+  .tc-blue .tag-card-header { background: var(--blue); }
+  .tc-orange .tag-card-header { background: var(--orange); }
+  .tc-purple .tag-card-header { background: var(--purple); }
+  .tc-pink .tag-card-header { background: var(--pink); }
+  .tc-teal .tag-card-header { background: var(--teal); }
+  .tc-red .tag-card-header { background: var(--red); }
+  .tc-gray .tag-card-header { background: var(--gray); }
+
+  /* Scenario Table */
+  .scenario-group { margin-bottom: 24px; }
+  .scenario-group h3 { font-size: 15px; margin-bottom: 4px; }
+  .scenario-group .sg-explain { font-size: 13px; color: var(--gray); margin-bottom: 10px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { background: var(--gray-light); padding: 8px 12px; text-align: left; font-weight: 600; color: #374151; border-bottom: 2px solid var(--gray-border); }
+  td { padding: 8px 12px; border-bottom: 1px solid #f1f5f9; color: #4b5563; }
+  tr:hover td { background: var(--blue-50); }
+
+  /* Dependency Map */
+  .dep-group { margin-bottom: 20px; }
+  .dep-source { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .dep-badge { padding: 4px 12px; border-radius: 6px; font-size: 13px; font-weight: 600; }
+  .dep-badge-scenario { background: var(--blue-light); color: var(--blue); }
+  .dep-targets { padding-left: 24px; border-left: 2px solid var(--gray-border); margin-left: 12px; }
+  .dep-target { display: flex; align-items: center; gap: 6px; padding: 3px 0; font-size: 13px; color: #4b5563; flex-wrap: wrap; }
+  .dep-step { font-size: 11px; color: var(--gray); background: var(--gray-light); padding: 1px 6px; border-radius: 4px; }
+  .dep-shared { background: var(--red-light); color: var(--red); font-size: 11px; padding: 1px 6px; border-radius: 4px; font-weight: 600; }
+
+  /* Friend Fields */
+  .field-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+  .field-card { border: 1px solid var(--gray-border); border-radius: 10px; padding: 16px; }
+  .field-card h4 { font-size: 14px; color: var(--purple); margin-bottom: 8px; }
+  .field-card .field-purpose { font-size: 12px; color: #581c87; margin-bottom: 10px; background: var(--purple-light); padding: 6px 10px; border-radius: 6px; }
+  .field-list { list-style: none; }
+  .field-list li { font-size: 13px; padding: 3px 0; color: #4b5563; }
+  .field-list li::before { content: "· "; color: var(--purple); font-weight: bold; }
+
+  /* Insight boxes */
+  .insight { background: #fffbeb; border: 1px solid #fbbf24; border-radius: 10px; padding: 16px 20px; margin: 16px 0; }
+  .insight-title { font-size: 14px; font-weight: 700; color: #92400e; margin-bottom: 4px; }
+  .insight-body { font-size: 13px; color: #78350f; }
+
+  /* Stats bar */
+  .stats { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 32px; }
+  .stat { background: white; border: 1px solid var(--gray-border); border-radius: 10px; padding: 16px 20px; flex: 1; min-width: 140px; text-align: center; }
+  .stat-num { font-size: 28px; font-weight: 700; color: var(--blue); }
+  .stat-label { font-size: 12px; color: var(--gray); margin-top: 2px; }
+
+  /* Collapsible */
+  details { margin-bottom: 8px; }
+  details summary { cursor: pointer; font-size: 14px; font-weight: 600; color: #374151; padding: 10px 14px; background: var(--gray-light); border-radius: 8px; list-style: none; display: flex; align-items: center; gap: 8px; }
+  details summary::before { content: "▸"; font-size: 12px; transition: transform 0.2s; }
+  details[open] summary::before { transform: rotate(90deg); }
+  details .detail-content { padding: 12px 14px; border: 1px solid var(--gray-border); border-top: none; border-radius: 0 0 8px 8px; }
+
+  /* Improvement proposal */
+  .proposal { border: 2px solid var(--blue); border-radius: 12px; overflow: hidden; margin: 16px 0; }
+  .proposal-header { background: var(--blue); color: white; padding: 14px 20px; font-size: 15px; font-weight: 700; }
+  .proposal-body { padding: 20px; }
+  .proposal table { margin-top: 12px; }
+  .proposal th { background: var(--blue-light); color: var(--blue); }
+  .cost-low { color: var(--green); font-weight: 600; }
+  .cost-mid { color: var(--orange); font-weight: 600; }
+  .cost-high { color: var(--red); font-weight: 600; }
+  .return-high { color: var(--green); font-weight: 600; }
+  .return-mid { color: var(--orange); font-weight: 600; }
+  .star { color: #f59e0b; }
+
+  /* Visual diagram: how shared template works */
+  .shared-diagram { display: flex; gap: 16px; align-items: center; justify-content: center; flex-wrap: wrap; padding: 20px 0; }
+  .sd-scenarios { display: flex; flex-direction: column; gap: 4px; }
+  .sd-scenario { background: var(--blue-light); color: var(--blue); padding: 4px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+  .sd-arrow-group { display: flex; flex-direction: column; align-items: center; gap: 0; }
+  .sd-arrow { color: #94a3b8; font-size: 16px; }
+  .sd-template { background: var(--red-light); color: var(--red); padding: 12px 20px; border-radius: 10px; font-size: 14px; font-weight: 700; border: 2px solid var(--red); text-align: center; }
+  .sd-template small { display: block; font-weight: 400; font-size: 11px; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- Header -->
+<div class="header">
+  <h1>Lステップ 全体構成マップ</h1>
+  <p>矯正歯科LINE公式アカウントの自動配信・タグ管理・依存関係の全体像</p>
+  <div class="meta">データ取得日: 2026-03-21 | シナリオ18件 / タグ111件 / テンプレート58種 / 友だち情報43件</div>
+</div>
+
+<!-- ===== 30-second Summary ===== -->
+<div class="summary-box">
+  <h2>30秒でわかるこのシステム</h2>
+  <div class="tldr">
+    このLINEアカウントは、矯正歯科に興味がある人が<strong>友だち登録</strong>してから<strong>初診予約</strong>するまでを、<br>
+    <strong>自動メッセージ配信</strong>で支援するシステムです。<br>
+    患者さんの「悩み」「興味度」「段階」に応じて、最適なメッセージが自動で届きます。
+  </div>
+  <div class="analogy">
+    <h4>日常のたとえで理解する「Lステップの4つの部品」</h4>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-top: 10px;">
+      <div class="analogy-item">
+        <span class="analogy-icon">📋</span>
+        <div>
+          <strong style="color: var(--blue);">シナリオ = レシピ</strong><br>
+          <span style="font-size:12px; color:#4b5563;">「1日目にAを送る、3日後にBを送る」という<strong>手順書</strong>。料理のレシピのように順番が決まっている。</span>
+        </div>
+      </div>
+      <div class="analogy-item">
+        <span class="analogy-icon">🏷️</span>
+        <div>
+          <strong style="color: var(--green);">タグ = 付箋（ふせん）</strong><br>
+          <span style="font-size:12px; color:#4b5563;">患者さんに貼る<strong>分類ラベル</strong>。「出っ歯で悩んでいる」「福岡の人」など。この付箋を見て、どのレシピを使うか決める。</span>
+        </div>
+      </div>
+      <div class="analogy-item">
+        <span class="analogy-icon">✉️</span>
+        <div>
+          <strong style="color: var(--orange);">テンプレート = 手紙の文面</strong><br>
+          <span style="font-size:12px; color:#4b5563;">実際に送る<strong>メッセージの中身</strong>。同じ文面を複数のレシピで使い回せる（共有テンプレート）。</span>
+        </div>
+      </div>
+      <div class="analogy-item">
+        <span class="analogy-icon">📇</span>
+        <div>
+          <strong style="color: var(--purple);">友だち情報 = カルテ</strong><br>
+          <span style="font-size:12px; color:#4b5563;">患者さんごとの<strong>個別データ</strong>。予約URL・登録日・ウェビナー参加日など。このデータで配信タイミングを計算する。</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Stats -->
+<div class="stats">
+  <div class="stat"><div class="stat-num">18</div><div class="stat-label">シナリオ（レシピ）</div></div>
+  <div class="stat"><div class="stat-num">111</div><div class="stat-label">タグ（付箋）</div></div>
+  <div class="stat"><div class="stat-num">58</div><div class="stat-label">テンプレート（手紙）</div></div>
+  <div class="stat"><div class="stat-num">43</div><div class="stat-label">友だち情報（カルテ）</div></div>
+  <div class="stat"><div class="stat-num">104</div><div class="stat-label">依存関係（つながり）</div></div>
+</div>
+
+<!-- TOC -->
+<div class="toc">
+  <h2>目次</h2>
+  <ol>
+    <li><a href="#journey">患者さんの体験フロー（全体の流れ）</a></li>
+    <li><a href="#tags">タグ一覧 — どこで・なぜ付くのか</a></li>
+    <li><a href="#scenarios">シナリオ一覧 — 何を・いつ送るのか</a></li>
+    <li><a href="#dependencies">依存関係マップ — 何が何とつながっているか</a></li>
+    <li><a href="#fields">友だち情報 — 患者ごとに保存するデータ</a></li>
+    <li><a href="#danger">注意すべきポイント（変更時のリスク）</a></li>
+    <li><a href="#proposals">改善提案TOP3</a></li>
+  </ol>
+</div>
+
+<!-- ===== 1. Patient Journey ===== -->
+<div class="section" id="journey">
+  <h2>1. 患者さんの体験フロー（全体の流れ）</h2>
+  <div class="section-lead">
+    「患者さんの目線」で見た、LINE登録から予約・契約までの流れです。各ステップで何が起きているかを追えます。
+  </div>
+
+  <div class="vflow">
+
+    <!-- Step 1 -->
+    <div class="vflow-step">
+      <div class="vflow-left">
+        <div class="vflow-num vn-blue">1</div>
+        <div class="vflow-line"></div>
+      </div>
+      <div class="vflow-body">
+        <div class="vflow-card vc-blue">
+          <div class="vflow-title">LINE友だち登録</div>
+          <div class="vflow-sub">
+            患者さんがInstagram広告・LP・YouTube・QRコードなどからLINE公式アカウントを友だち追加する。<br>
+            <strong>どこから来たかを自動で記録。</strong>
+          </div>
+          <div class="vflow-tags">
+            <span class="vflow-tag vt-tag">🏷️ 流入経路タグが自動で付く</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="vflow-step">
+      <div class="vflow-left">
+        <div class="vflow-num vn-green">2</div>
+        <div class="vflow-line"></div>
+      </div>
+      <div class="vflow-body">
+        <div class="vflow-card vc-green">
+          <div class="vflow-title">登録時アンケート</div>
+          <div class="vflow-sub">
+            友だち追加した直後にアンケートが表示される。<br>
+            「お悩みの症例は?」「希望の医院は?」「相談の緊急度は?」の3問に回答。<br>
+            <strong>回答内容に応じてタグが自動付与され、以降の配信内容が決まる。</strong>
+          </div>
+          <div class="vflow-tags">
+            <span class="vflow-tag vt-tag">🏷️ 症例タグ（例: 叢生、出っ歯）</span>
+            <span class="vflow-tag vt-tag">🏷️ 医院タグ（例: 福岡、札幌）</span>
+            <span class="vflow-tag vt-tag">🏷️ 意欲タグ（例: 今すぐ相談したい）</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="vflow-step">
+      <div class="vflow-left">
+        <div class="vflow-num vn-orange">3</div>
+        <div class="vflow-line"></div>
+      </div>
+      <div class="vflow-body">
+        <div class="vflow-card vc-orange">
+          <div class="vflow-title">カウンセリング誘導（1時間後〜）</div>
+          <div class="vflow-sub">
+            登録の約1時間後から自動配信が始まる。<br>
+            「矯正治療についてもっと詳しく知りませんか?」とウェビナー（説明動画）への参加を誘導。<br>
+            <strong>患者さんのフェーズ移行日時がカルテに記録される。</strong>
+          </div>
+          <div class="vflow-tags">
+            <span class="vflow-tag vt-field">📇 フェーズ移行日時をカルテに記録</span>
+            <span class="vflow-tag vt-template">✉️ カウンセリング誘導テンプレート使用</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="vflow-step">
+      <div class="vflow-left">
+        <div class="vflow-num vn-purple">4</div>
+        <div class="vflow-line"></div>
+      </div>
+      <div class="vflow-body">
+        <div class="vflow-card vc-purple">
+          <div class="vflow-title">オートウェビナー（録画動画視聴）</div>
+          <div class="vflow-sub">
+            矯正治療の流れ・費用・症例紹介をまとめた録画動画を案内。<br>
+            視聴の進捗（何%まで見たか）が自動で記録される。<br>
+            <strong>視聴率が高い人 = 関心度が高い、と判定してフォロー強度を変える。</strong>
+          </div>
+          <div class="vflow-tags">
+            <span class="vflow-tag vt-tag">🏷️ 視聴率タグ（0%/5%/10%/.../100%）</span>
+            <span class="vflow-tag vt-tag">🏷️ AW申込済み / AW参加 タグ</span>
+            <span class="vflow-tag vt-field">📇 ウェビナー参加URL・申込日を記録</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 5 -->
+    <div class="vflow-step">
+      <div class="vflow-left">
+        <div class="vflow-num vn-orange">5</div>
+        <div class="vflow-line"></div>
+      </div>
+      <div class="vflow-body">
+        <div class="vflow-card vc-orange">
+          <div class="vflow-title">症例動画ステップ配信（数日おき × 4本）</div>
+          <div class="vflow-sub">
+            アンケートで選んだ<strong>症例に合った</strong>Before/After動画が数日おきに届く。<br>
+            例: 「叢生」を選んだ人 → 叢生#1 → 叢生#2 → 叢生#3 → 叢生#4 の4本。<br>
+            <strong>9症例ごとに別のシナリオ（レシピ）が用意されている。</strong>
+          </div>
+          <div class="vflow-tags">
+            <span class="vflow-tag vt-template">✉️ 症例別テンプレート（例: 叢生#1〜#4）</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 6 -->
+    <div class="vflow-step">
+      <div class="vflow-left">
+        <div class="vflow-num vn-pink">6</div>
+        <div class="vflow-line"></div>
+      </div>
+      <div class="vflow-body">
+        <div class="vflow-card vc-pink">
+          <div class="vflow-title">予約誘導CTA（カウンセリング予約へ）</div>
+          <div class="vflow-sub">
+            症例動画の最後に「カウンセリングを予約しませんか?」のメッセージが届く。<br>
+            <strong style="color:var(--red);">この予約誘導メッセージは10箇所で共有されている最重要テンプレート。</strong><br>
+            予約URLをタップするとクリック数が記録され、予約完了でゴール達成。
+          </div>
+          <div class="vflow-tags">
+            <span class="vflow-tag vt-template" style="background:var(--red-light); color:var(--red);">✉️ 共有テンプレート「予約誘導」（10箇所共有）</span>
+            <span class="vflow-tag vt-tag">🏷️ 予約URLクリック済み</span>
+            <span class="vflow-tag vt-action">🎯 初診-予約済み（ゴール!）</span>
+            <span class="vflow-tag vt-field">📇 クリック回数+1</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 7 -->
+    <div class="vflow-step">
+      <div class="vflow-left">
+        <div class="vflow-num vn-teal">7</div>
+        <div class="vflow-line"></div>
+      </div>
+      <div class="vflow-body">
+        <div class="vflow-card vc-teal">
+          <div class="vflow-title">離脱防止フォロー（初診後〜契約まで）</div>
+          <div class="vflow-sub">
+            初診後に「精密検査」や「契約」を迷っている患者さんへ、<br>
+            当日/1日後/3日後/7日後/14日後 にフォローメッセージを自動配信。<br>
+            30日間反応がなければ最後のリマインドを1回送信。<br>
+            <strong>来院時のQRスキャンで進捗ステータスが更新される。</strong>
+          </div>
+          <div class="vflow-tags">
+            <span class="vflow-tag vt-template">✉️ 精密/契約検討テンプレート</span>
+            <span class="vflow-tag vt-tag">🏷️ QRスキャン-予約ステータスタグ</span>
+            <span class="vflow-tag vt-field">📇 配信日時・フェーズ移行日時を管理</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="narrative">
+    <h4>具体例: 「叢生（歯並びガタガタ）」で悩むAさんの場合</h4>
+    <ol>
+      <li>Instagram広告からLINE登録 → 🏷️「流入経路-広告」タグが付く</li>
+      <li>アンケートで「叢生」「福岡」「今すぐ相談したい」を選択 → 🏷️ 3つのタグが付く</li>
+      <li>1時間後「カウンセリング誘導」シナリオが自動で配信開始 📇 フェーズ日時を記録</li>
+      <li>ウェビナー（矯正の説明動画）を案内 → 視聴すると 🏷️「滞在率50%」等のタグが付く</li>
+      <li>「叢生」の症例動画を4本、数日おきに自動配信 ✉️ 叢生#1 → #2 → #3 → #4</li>
+      <li>最後に予約誘導メッセージ ✉️「ステップ配信後-予約誘導」（共有テンプレート）</li>
+      <li>予約URLをタップ → 🏷️「福岡MA-予約URL-クリック済み」タグ → 📇 クリック回数+1</li>
+    </ol>
+  </div>
+
+  <div class="insight">
+    <div class="insight-title">ポイント: タグが全体をつなぐ「血管」</div>
+    <div class="insight-body">各ステップでタグが付与され、そのタグを条件に次のシナリオが発動します。<strong>タグを変更すると下流のシナリオ全体に影響が波及</strong>するため、変更時は依存関係の確認が必須です。</div>
+  </div>
+</div>
+
+<!-- ===== 2. Tags ===== -->
+<div class="section" id="tags">
+  <h2>2. タグ一覧 — どこで・なぜ付くのか</h2>
+  <div class="section-lead">
+    全111件のタグをカテゴリ別に整理。各カテゴリには<strong>「設定場所」</strong>（= Lステップのどの画面・機能でこのタグが付くか）と<strong>「タイミング」</strong>（= いつ付くか）を明記しています。
+  </div>
+
+  <div class="tag-grid">
+
+    <!-- 流入経路 -->
+    <div class="tag-card tc-blue">
+      <div class="tag-card-header">
+        🔗 流入経路
+        <span class="count">19件</span>
+      </div>
+      <div class="tag-card-body">
+        <div class="where">
+          <strong>設定場所:</strong> Lステップの「流入経路分析」画面で、QRコード・URLごとに紐づけ<br>
+          <span class="where-when">いつ付く: 友だちがそのURL/QRから登録した瞬間に自動付与</span>
+        </div>
+        <ul class="tag-list">
+          <li><span class="tag-name">流入経路-大友さん-共有-広告URL</span><span class="tag-count">77人</span></li>
+          <li><span class="tag-name">流入経路-白上さん-共有-広告URL</span><span class="tag-count">8人</span></li>
+          <li><span class="tag-name">流入経路-福岡MA矯正歯科</span><span class="tag-count">4人</span></li>
+          <li><span class="tag-name">流入経路-LP / YouTube</span><span class="tag-count">3-4人</span></li>
+          <li><span class="tag-name">流入経路-Google / 広告 / LINE / Meta / TikTok 等</span><span class="tag-count">0-1人</span></li>
+        </ul>
+        <div class="tag-more">+ 各医院名・媒体名のタグ 計19件</div>
+      </div>
+    </div>
+
+    <!-- LINE登録時アンケート -->
+    <div class="tag-card tc-green">
+      <div class="tag-card-header">
+        📝 LINE登録時アンケート
+        <span class="count">16件</span>
+      </div>
+      <div class="tag-card-body">
+        <div class="where">
+          <strong>設定場所:</strong> Lステップの「友だち追加時設定」画面。アンケートの各選択肢にタグを紐づけ<br>
+          <span class="where-when">いつ付く: 友だちがアンケートの選択肢をタップした瞬間に自動付与</span>
+        </div>
+
+        <details>
+          <summary>症例（お悩み）タグ — 9件</summary>
+          <div class="detail-content">
+            <ul class="tag-list">
+              <li><span class="tag-name">登録時アンケート-症例-叢生</span><span class="tag-count">40人</span></li>
+              <li><span class="tag-name">登録時アンケート-症例-出っ歯</span><span class="tag-count">21人</span></li>
+              <li><span class="tag-name">登録時アンケート-症例-受け口</span><span class="tag-count">9人</span></li>
+              <li><span class="tag-name">登録時アンケート-症例-すきっ歯</span><span class="tag-count">8人</span></li>
+              <li><span class="tag-name">登録時アンケート-症例-八重歯</span><span class="tag-count">7人</span></li>
+              <li><span class="tag-name">登録時アンケート-症例-その他</span><span class="tag-count">7人</span></li>
+              <li><span class="tag-name">登録時アンケート-症例-噛み合わせ</span><span class="tag-count">6人</span></li>
+              <li><span class="tag-name">登録時アンケート-症例-正中不一致</span><span class="tag-count">3人</span></li>
+              <li><span class="tag-name">登録時アンケート-症例-口唇閉鎖不全 / 開咬等</span><span class="tag-count">0人</span></li>
+            </ul>
+          </div>
+        </details>
+
+        <details>
+          <summary>医院タグ — 5件</summary>
+          <div class="detail-content">
+            <ul class="tag-list">
+              <li><span class="tag-name">登録時アンケート-医院-福岡</span><span class="tag-count">45人</span></li>
+              <li><span class="tag-name">登録時アンケート-医院-日本橋</span><span class="tag-count">29人</span></li>
+              <li><span class="tag-name">登録時アンケート-医院-札幌</span><span class="tag-count">15人</span></li>
+              <li><span class="tag-name">登録時アンケート-医院-名古屋</span><span class="tag-count">10人</span></li>
+              <li><span class="tag-name">登録時アンケート-医院-心斎橋</span><span class="tag-count">3人</span></li>
+            </ul>
+          </div>
+        </details>
+
+        <details>
+          <summary>矯正相談の意欲タグ — 4件</summary>
+          <div class="detail-content">
+            <ul class="tag-list">
+              <li><span class="tag-name">矯正相談-今すぐ相談したい</span><span class="tag-count">28人</span></li>
+              <li><span class="tag-name">矯正相談-すでに予約している</span><span class="tag-count">25人</span></li>
+              <li><span class="tag-name">矯正相談-検討したい</span><span class="tag-count">21人</span></li>
+              <li><span class="tag-name">矯正相談-もう少し考えてから</span><span class="tag-count">19人</span></li>
+            </ul>
+          </div>
+        </details>
+
+        <ul class="tag-list" style="margin-top:8px;">
+          <li><span class="tag-name">登録アンケート-回答済み</span><span class="tag-count">63人</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CV + 予約完了 -->
+    <div class="tag-card tc-pink">
+      <div class="tag-card-header">
+        🎯 CV・予約完了
+        <span class="count">6件</span>
+      </div>
+      <div class="tag-card-body">
+        <div class="where">
+          <strong>設定場所:</strong> 予約フォーム完了時のアクション、またはシナリオ内のアクション設定で付与<br>
+          <span class="where-when">いつ付く: 患者さんが予約を完了した時点</span>
+        </div>
+        <ul class="tag-list">
+          <li><span class="tag-name">初診-予約済み</span><span class="tag-count">114人 ← 最重要ゴール指標</span></li>
+          <li><span class="tag-name">福岡MA-予約完了</span><span class="tag-count">115人</span></li>
+          <li><span class="tag-name">札幌MA / 日本橋MA / 名駅MA / 心斎橋MA-予約完了</span><span class="tag-count">各0人</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 予約URLクリック -->
+    <div class="tag-card tc-orange">
+      <div class="tag-card-header">
+        👆 予約URLクリック
+        <span class="count">2件</span>
+      </div>
+      <div class="tag-card-body">
+        <div class="where">
+          <strong>設定場所:</strong> テンプレート内のURLボタンに「タップ時アクション」として設定<br>
+          <span class="where-when">いつ付く: LINE内のメッセージやリッチメニューの予約URLをタップした時</span>
+        </div>
+        <ul class="tag-list">
+          <li><span class="tag-name">福岡MA以外-予約URL-クリック済み</span><span class="tag-count">28人</span></li>
+          <li><span class="tag-name">福岡MA-予約URL-クリック済み</span><span class="tag-count">26人</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- オートウェビナー（初診誘導） -->
+    <div class="tag-card tc-purple">
+      <div class="tag-card-header">
+        🎬 オートウェビナー（初診誘導用）
+        <span class="count">14件</span>
+      </div>
+      <div class="tag-card-body">
+        <div class="where">
+          <strong>設定場所:</strong> ウェビナー配信ツール（外部連携）とLステップのWebhook/アクション連携<br>
+          <span class="where-when">いつ付く: ウェビナーの申込・参加・視聴進捗に応じて自動付与</span>
+        </div>
+
+        <details>
+          <summary>視聴維持率タグ — 8段階</summary>
+          <div class="detail-content">
+            <ul class="tag-list">
+              <li><span class="tag-name">初診誘導-オートウェビナー_視聴中_滞在率0%〜100%</span><span class="tag-count">8段階 × 各0人</span></li>
+            </ul>
+            <p style="font-size:12px; color:var(--gray); margin:8px 0 0;">視聴の離脱ポイントを特定し、コンテンツ改善に活用</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>ファネル進捗タグ — 5件</summary>
+          <div class="detail-content">
+            <ul class="tag-list">
+              <li><span class="tag-name">オートウェビナー-検討中</span><span class="tag-count">0人</span></li>
+              <li><span class="tag-name">カウンセリング誘導-オートウェビナー-申込済み</span><span class="tag-count">0人</span></li>
+              <li><span class="tag-name">オートウェビナー-参加</span><span class="tag-count">0人</span></li>
+              <li><span class="tag-name">オートウェビナー経由-予約ボタンクリック</span><span class="tag-count">0人</span></li>
+              <li><span class="tag-name">ファネル終了後→ステップ配信開始</span><span class="tag-count">0人</span></li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <!-- 初診後ウェビナー -->
+    <div class="tag-card tc-purple">
+      <div class="tag-card-header">
+        🎬 オートウェビナー（初診後説明用）
+        <span class="count">9件</span>
+      </div>
+      <div class="tag-card-body">
+        <div class="where">
+          <strong>設定場所:</strong> 上記と同様の仕組み。初診後→精密検査の検討段階向け<br>
+          <span class="where-when">いつ付く: 初診後に案内する説明ウェビナーの視聴進捗に応じて</span>
+        </div>
+        <ul class="tag-list">
+          <li><span class="tag-name">初診後説明-オートウェビナー_視聴中_滞在率0%〜100%</span><span class="tag-count">8段階</span></li>
+          <li><span class="tag-name">予約後-オートウェビナー-申込済み</span><span class="tag-count">0人</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- QRスキャン -->
+    <div class="tag-card tc-teal">
+      <div class="tag-card-header">
+        📱 患者様予約ステータス（QRスキャン）
+        <span class="count">20件</span>
+      </div>
+      <div class="tag-card-body">
+        <div class="where">
+          <strong>設定場所:</strong> 各医院の受付に設置されたQRコードを「流入経路分析」機能で管理<br>
+          <span class="where-when">いつ付く: 患者さんが来院時にQRコードをスキャンした時</span>
+        </div>
+        <p style="font-size:13px; color:#4b5563; margin-bottom:8px;">
+          5医院 × 4段階 = 20件<br>
+          段階: ① 初診後→精密 検討 / ② 精密 予約済み / ③ 精密後→契約 検討 / ④ 契約 済み
+        </p>
+        <div class="tag-more">札幌・日本橋・名駅・心斎橋・福岡</div>
+      </div>
+    </div>
+
+    <!-- YouTube -->
+    <div class="tag-card tc-red">
+      <div class="tag-card-header">
+        🎥 YouTube URL タップ
+        <span class="count">2件</span>
+      </div>
+      <div class="tag-card-body">
+        <div class="where">
+          <strong>設定場所:</strong> テンプレート内のYouTubeリンクに「タップ時アクション」として設定<br>
+          <span class="where-when">いつ付く: LINE内のメッセージからYouTubeリンクをタップした時</span>
+        </div>
+        <ul class="tag-list">
+          <li><span class="tag-name">福岡MA-YT-Shorts-タップ</span><span class="tag-count">14人</span></li>
+          <li><span class="tag-name">福岡MA-YT-症例解説-タップ</span><span class="tag-count">8人</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 院長矯正相談 + 口コミ -->
+    <div class="tag-card tc-gray">
+      <div class="tag-card-header">
+        🦷 院長矯正相談 / 口コミ依頼
+        <span class="count">14件</span>
+      </div>
+      <div class="tag-card-body">
+        <div class="where">
+          <strong>設定場所:</strong> それぞれの専用フロー内のアクション設定で付与<br>
+          <span class="where-when">いつ付く: 院長相談の通知設定時 / 口コミ依頼への回答時</span>
+        </div>
+        <details>
+          <summary>院長矯正相談 — 7件</summary>
+          <div class="detail-content">
+            <ul class="tag-list">
+              <li><span class="tag-name">通知を受け取る / 受け取らない</span></li>
+              <li><span class="tag-name">一斉送信-優先通知 / 通知受け取らない-タップ</span></li>
+              <li><span class="tag-name">リマインド-キャンセル / 未反応 / 反応済み</span></li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>口コミ依頼 — 7件</summary>
+          <div class="detail-content">
+            <ul class="tag-list">
+              <li><span class="tag-name">① 感想を質問済み</span></li>
+              <li><span class="tag-name">② 感想: ◯ とても良かった / △ まあまあ / × ダメだった</span></li>
+              <li><span class="tag-name">③ 口コミ依頼をタップ / 投稿しない / △×フォーム開封</span></li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 3. Scenarios ===== -->
+<div class="section" id="scenarios">
+  <h2>3. シナリオ一覧 — 何を・いつ送るのか</h2>
+  <div class="section-lead">
+    全18本のシナリオ（自動配信プログラム）を目的別に整理。「テンプレート」列の<span style="color:var(--red); font-weight:600;">赤字</span>は、他のシナリオと共有されているテンプレートです。
+  </div>
+
+  <div class="scenario-group">
+    <h3>A. 症例動画ステップ配信（9本）</h3>
+    <p class="sg-explain">目的: 患者さんの悩みに合った症例のBefore/After動画を4本送り、最後にカウンセリング予約を誘導する</p>
+    <table>
+      <tr><th>シナリオ名</th><th>ステップ</th><th>使用テンプレート（配信順）</th><th>配信済</th></tr>
+      <tr><td>症例動画-ステップ配信-叢生</td><td>5</td><td>叢生#1 → #2 → #3 → #4 → <span style="color:var(--red); font-weight:600;">予約誘導(共有)</span></td><td>3回</td></tr>
+      <tr><td>症例動画-ステップ配信-出っ歯</td><td>4</td><td>出っ歯#1 → #2 → #3 → #4</td><td>2回</td></tr>
+      <tr><td>症例動画-ステップ配信-八重歯</td><td>5</td><td>八重歯#1→#2→#3→#4 → <span style="color:var(--red); font-weight:600;">予約誘導(共有)</span></td><td>1回</td></tr>
+      <tr><td>症例動画-ステップ配信-正中</td><td>5</td><td>正中#1→#2→#3→#4 → <span style="color:var(--red); font-weight:600;">予約誘導(共有)</span></td><td>1回</td></tr>
+      <tr><td>症例動画-ステップ配信-噛み合わない</td><td>5</td><td>噛み合わない#1→#2→#3→#4 → <span style="color:var(--red); font-weight:600;">予約誘導(共有)</span></td><td>1回</td></tr>
+      <tr><td>症例動画-ステップ配信-受け口</td><td>5</td><td>受け口#1→#2→#3→#4 → <span style="color:var(--red); font-weight:600;">予約誘導(共有)</span></td><td>0回</td></tr>
+      <tr><td>症例動画-ステップ配信-すきっ歯</td><td>5</td><td>すきっ歯#1→#2→#3→#4 → <span style="color:var(--red); font-weight:600;">予約誘導(共有)</span></td><td>0回</td></tr>
+      <tr><td>症例動画-ステップ配信-口唇</td><td>5</td><td>口唇#1→#2→#3→#4 → <span style="color:var(--red); font-weight:600;">予約誘導(共有)</span></td><td>0回</td></tr>
+      <tr><td>症例動画-ステップ配信-抜歯窩</td><td>5</td><td>抜歯窩#1→#2→#3→#4 → <span style="color:var(--red); font-weight:600;">予約誘導(共有)</span></td><td>0回</td></tr>
+    </table>
+  </div>
+
+  <div class="scenario-group">
+    <h3>B. オートウェビナー誘導（2本）</h3>
+    <p class="sg-explain">目的: 録画済みウェビナーで矯正治療を理解してもらい、予約につなげる</p>
+    <table>
+      <tr><th>シナリオ名</th><th>ステップ</th><th>内容</th></tr>
+      <tr><td>顕在層向け-カウンセリング誘導#1</td><td>2+</td><td>登録1時間後に誘導開始 → AW申込日をカルテに記録 → ウェビナー案内</td></tr>
+      <tr><td>オートウェビナー誘導 + 10種類症例BA</td><td style="color:var(--red); font-weight:600;">48</td><td><strong>最大規模</strong>: AW誘導 → 全9症例のBA動画を順番に配信 → 予約誘導<br><span style="font-size:12px; color:var(--gray);">※ 全症例の#1〜#4テンプレートを使用 = 症例別シナリオと共有</span></td></tr>
+    </table>
+  </div>
+
+  <div class="scenario-group">
+    <h3>C. 離脱防止ステップ配信（4本）</h3>
+    <p class="sg-explain">目的: 初診後の患者が精密検査や契約を迷っている間にフォローし、離脱を防ぐ</p>
+    <table>
+      <tr><th>シナリオ名</th><th>ステップ</th><th>内容</th></tr>
+      <tr><td>精密-検討向け-ステップ配信</td><td>6</td><td>初診後→精密検査の検討者に 当日/1日/3日/7日/14日後にフォロー配信</td></tr>
+      <tr><td>精密-配信STOP-30日後 配信</td><td>1</td><td>配信停止後30日経過したら1回リマインド</td></tr>
+      <tr><td>契約-検討向け-ステップ配信</td><td>6</td><td>精密後→契約の検討者に 当日/1日/3日/7日/14日後にフォロー配信</td></tr>
+      <tr><td>契約-配信STOP-30日後 配信</td><td>1</td><td>配信停止後30日経過したら1回リマインド</td></tr>
+    </table>
+  </div>
+
+  <div class="scenario-group">
+    <h3>D. その他（3本）</h3>
+    <table>
+      <tr><th>シナリオ名</th><th>ステップ</th><th>内容</th></tr>
+      <tr><td>LINE登録時アンケート 離脱防止</td><td>3</td><td>アンケート未回答者に1時間/1日/3日後リマインド</td></tr>
+      <tr><td>旧-カウンセリング決定後-福岡MA</td><td>1</td><td>福岡限定YouTube紹介</td></tr>
+      <tr><td>予約後-オートウェビナー誘導</td><td>0</td><td>（未実装）</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ===== 4. Dependencies ===== -->
+<div class="section" id="dependencies">
+  <h2>4. 依存関係マップ — 何が何とつながっているか</h2>
+  <div class="section-lead">
+    「シナリオAがテンプレートBを使っている」という関係を全104件可視化しています。<br>
+    <strong>同じテンプレートを複数シナリオが使っている = 共有テンプレート</strong>。変更すると全シナリオに影響します。
+  </div>
+
+  <div class="narrative">
+    <h4>「共有テンプレート」とは何か？</h4>
+    <p>
+      たとえ話: 社内で1枚の「契約書ひな形」を10部署が使っているとします。<br>
+      ひな形を修正すると<strong>10部署全ての契約書が変わります</strong>。これが「共有テンプレート」のリスクです。<br>
+      逆に、1箇所直せば全部直る<strong>効率性</strong>でもあります。
+    </p>
+  </div>
+
+  <!-- Visual: shared template diagram -->
+  <h3>共有テンプレート「予約誘導」の依存関係図</h3>
+  <div class="shared-diagram">
+    <div class="sd-scenarios">
+      <div class="sd-scenario">叢生シナリオ → step4</div>
+      <div class="sd-scenario">出っ歯シナリオ → step4</div>
+      <div class="sd-scenario">八重歯シナリオ → step4</div>
+      <div class="sd-scenario">正中シナリオ → step4</div>
+      <div class="sd-scenario">噛み合わないシナリオ → step4</div>
+      <div class="sd-scenario">受け口シナリオ → step4</div>
+      <div class="sd-scenario">すきっ歯シナリオ → step4</div>
+      <div class="sd-scenario">口唇シナリオ → step4</div>
+      <div class="sd-scenario">抜歯窩シナリオ → step4</div>
+      <div class="sd-scenario">AW誘導シナリオ → step47</div>
+    </div>
+    <div class="sd-arrow-group">
+      <div class="sd-arrow">→</div>
+      <div class="sd-arrow">→</div>
+      <div class="sd-arrow">→</div>
+      <div class="sd-arrow">→</div>
+      <div class="sd-arrow">→</div>
+      <div class="sd-arrow">→</div>
+      <div class="sd-arrow">→</div>
+      <div class="sd-arrow">→</div>
+      <div class="sd-arrow">→</div>
+      <div class="sd-arrow">→</div>
+    </div>
+    <div class="sd-template">
+      ステップ配信後<br>予約誘導-カウン...
+      <small>この1つを変更 → 10箇所に影響</small>
+    </div>
+  </div>
+
+  <h3>共有テンプレート一覧（変更注意度順）</h3>
+  <table>
+    <tr><th>テンプレート名</th><th>使用数</th><th>使っているシナリオ</th><th>変更注意度</th></tr>
+    <tr>
+      <td style="color:var(--red); font-weight:600;">ステップ配信後-予約誘導-カウン...</td>
+      <td><strong>10箇所</strong></td>
+      <td>症例動画9種 + AW誘導</td>
+      <td><span style="color:var(--red);">★★★ 最重要</span></td>
+    </tr>
+    <tr>
+      <td style="color:var(--orange);">各症例#1〜#4（出っ歯, 叢生 等）</td>
+      <td>各2箇所</td>
+      <td>個別シナリオ + AW誘導(48ステップ)</td>
+      <td><span style="color:var(--orange);">★★☆ 注意</span></td>
+    </tr>
+    <tr>
+      <td style="color:var(--orange);">精密/契約-予約タップ-配信STOP</td>
+      <td>各2箇所</td>
+      <td>検討向けステップ + 30日後配信</td>
+      <td><span style="color:var(--orange);">★★☆ 注意</span></td>
+    </tr>
+  </table>
+
+  <h3 style="margin-top:24px;">全シナリオの依存先詳細</h3>
+
+  <details>
+    <summary>オートウェビナー誘導 + 10種類症例BA（48ステップ・最大規模）</summary>
+    <div class="detail-content">
+      <div class="dep-targets">
+        <div class="dep-target"><span class="dep-step">step8</span> 症例投稿始まることの予告</div>
+        <div class="dep-target"><span class="dep-step">step9</span> 友だち情報 [フェーズ移行_④_日時...] <span style="font-size:11px; color:var(--purple);">← カルテ参照</span></div>
+        <div class="dep-target"><span class="dep-step">step10-18</span> 全9症例の#1テンプレート <span class="dep-shared">共有×9</span></div>
+        <div class="dep-target"><span class="dep-step">step19-27</span> 全9症例の#2テンプレート <span class="dep-shared">共有×9</span></div>
+        <div class="dep-target"><span class="dep-step">step28-36</span> 全9症例の#3テンプレート <span class="dep-shared">共有×9</span></div>
+        <div class="dep-target"><span class="dep-step">step37-45</span> 全9症例の#4テンプレート <span class="dep-shared">共有×9</span></div>
+        <div class="dep-target"><span class="dep-step">step46</span> 友だち情報 [フェーズ移行_⑤_日時...] <span style="font-size:11px; color:var(--purple);">← カルテ参照</span></div>
+        <div class="dep-target"><span class="dep-step">step47</span> ステップ配信後-予約誘導-カウン... <span class="dep-shared">共有×10</span></div>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary>症例動画シナリオ × 9本（各5ステップ）</summary>
+    <div class="detail-content">
+      <div class="dep-targets">
+        <div class="dep-target"><span class="dep-step">step0-3</span> {症例名}#1 → #2 → #3 → #4 <span class="dep-shared">AW誘導でも使用</span></div>
+        <div class="dep-target"><span class="dep-step">step4</span> ステップ配信後-予約誘導-カウン... <span class="dep-shared">共有×10</span></div>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary>離脱防止シナリオ × 4本</summary>
+    <div class="detail-content">
+      <p style="font-size:13px; margin-bottom:8px;"><strong>精密-検討向け:</strong> 【初診→精密検討】当日19時/1日後/3日後/7日後/14日後 → 精密-予約タップ-配信STOP</p>
+      <p style="font-size:13px; margin-bottom:8px;"><strong>契約-検討向け:</strong> 【精密→契約検討】当日19時/1日後/3日後/7日後/14日後 → 契約-予約タップ-配信STOP</p>
+      <p style="font-size:13px;"><strong>30日後配信 × 2本:</strong> 各配信STOPテンプレートを再使用</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>その他のシナリオ × 3本</summary>
+    <div class="detail-content">
+      <p style="font-size:13px;"><strong>アンケート離脱防止:</strong> 当日1時間後 → 1日後 → 3日後</p>
+      <p style="font-size:13px;"><strong>カウンセリング誘導#1:</strong> カウンセリング誘導#1 1時間後 → 友だち情報[フェーズ移行_③_日時]</p>
+      <p style="font-size:13px;"><strong>旧-福岡MA:</strong> YouTube紹介-福岡MA</p>
+    </div>
+  </details>
+</div>
+
+<!-- ===== 5. Friend Fields ===== -->
+<div class="section" id="fields">
+  <h2>5. 友だち情報 — 患者ごとに保存するデータ</h2>
+  <div class="section-lead">
+    全43件。患者さんごとの「カルテ」のようなもの。配信タイミングの計算やパーソナライズに使います。<br>
+    たとえ話: 病院のカルテに「初診日」「次回予約日」を書くのと同じ。シナリオはこのカルテを見て「○日後に配信」を計算します。
+  </div>
+
+  <div class="field-grid">
+    <div class="field-card">
+      <h4>🔗 重要URL（2件）</h4>
+      <div class="field-purpose">配信メッセージ内で「{友だち情報:予約URL}」のように動的に差し替え</div>
+      <ul class="field-list">
+        <li>相談用 LINE登録リンク</li>
+        <li>予約URL-規定値-全体予約URL</li>
+      </ul>
+    </div>
+
+    <div class="field-card">
+      <h4>📅 初診獲得フェーズ追跡（6件）</h4>
+      <div class="field-purpose">患者がどの段階にいるかを日時で記録。シナリオの時刻指定配信の「基準日」として参照される</div>
+      <ul class="field-list">
+        <li>① 初診-検討（フェーズ移行日時）</li>
+        <li>② カウンセリング誘導#1-検討</li>
+        <li>③ オートウェビナー-検討</li>
+        <li>④ ステップ配信-検討</li>
+        <li>⑤ カウンセリング誘導#2-検討</li>
+        <li>⑥ 初診-予約済み</li>
+      </ul>
+    </div>
+
+    <div class="field-card">
+      <h4>📅 離脱防止フェーズ追跡（16件）</h4>
+      <div class="field-purpose">初診後→精密→契約の各段階の日時と、配信スケジュールを管理</div>
+      <ul class="field-list">
+        <li>フェーズ移行_①〜⑧_日時（8段階）</li>
+        <li>精密検討_配信1〜最終配信_日時（6件）</li>
+        <li>契約検討_配信1〜最終配信_日時（6件）</li>
+        <li>精密/契約-30日後リマインド-送信日</li>
+      </ul>
+    </div>
+
+    <div class="field-card">
+      <h4>🎬 オートウェビナー（4件）</h4>
+      <div class="field-purpose">ウェビナーの参加管理。名前・URL・申込日を保存</div>
+      <ul class="field-list">
+        <li>ウェビナー-名前</li>
+        <li>ウェビナー参加URL</li>
+        <li>カウンセリング誘導-ウェビナー申込日</li>
+        <li>予約後-ウェビナー申込日</li>
+      </ul>
+    </div>
+
+    <div class="field-card">
+      <h4>👆 予約リンク クリック回数（2件）</h4>
+      <div class="field-purpose">予約URLを何回クリックしたかカウント。関心度の指標</div>
+      <ul class="field-list">
+        <li>福岡MA-予約URL-クリック回数</li>
+        <li>福岡MA以外-予約URL-クリック回数</li>
+      </ul>
+    </div>
+
+    <div class="field-card">
+      <h4>📋 その他（7件）</h4>
+      <div class="field-purpose">個別機能で使用するデータ</div>
+      <ul class="field-list">
+        <li>患者様-初診予約までの状況（select）</li>
+        <li>患者様予約ステータス（select）</li>
+        <li>友だち登録日</li>
+        <li>院長矯正相談-予約日</li>
+        <li>今までの装着時間 / チェック回数</li>
+        <li>矯正歯科-動画-タップ数</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 6. Danger Zone ===== -->
+<div class="section" id="danger">
+  <h2>6. 注意すべきポイント（変更時のリスク）</h2>
+  <div class="section-lead">
+    「何かを変えたい」と思ったとき、<strong>何を確認すべきか</strong>のガイドです。
+  </div>
+
+  <div class="insight" style="border-color: var(--red); background: var(--red-light);">
+    <div class="insight-title" style="color: var(--red);">最重要: 共有テンプレート「予約誘導」の変更</div>
+    <div class="insight-body" style="color: #7f1d1d;">
+      10箇所で使用中。変更すると<strong>9つの症例シナリオ + AW誘導シナリオ</strong>の最終メッセージが全て変わる。<br>
+      1つのシナリオだけ変えたい場合は、テンプレートをコピーして別名で作成し、そのシナリオだけ参照先を変更する。
+    </div>
+  </div>
+
+  <div class="insight" style="border-color: var(--orange); background: var(--orange-light);">
+    <div class="insight-title" style="color: var(--orange);">症例テンプレートの二重使用</div>
+    <div class="insight-body" style="color: #7c2d12;">
+      出っ歯#1 等は<strong>個別シナリオ</strong>と<strong>48ステップ巨大シナリオ</strong>の2箇所で使用。<br>
+      片方だけ変えたい場合は、コピーして「出っ歯#1-AW用」のように分離する。
+    </div>
+  </div>
+
+  <div class="insight" style="border-color: var(--purple); background: var(--purple-light);">
+    <div class="insight-title" style="color: var(--purple);">友だち情報フィールドの名前変更禁止</div>
+    <div class="insight-body" style="color: #581c87;">
+      「フェーズ移行_③_日時」等はシナリオ内で「{友だち情報:フィールド名}」として直接参照されている。<br>
+      フィールド名を変えると配信タイミングの計算が壊れる。<strong>名前は絶対に変えない</strong>。
+    </div>
+  </div>
+
+  <h3>変更影響チェックリスト</h3>
+  <table>
+    <tr><th>変更したいもの</th><th>確認すべきこと</th><th>間違えると何が起きる？</th></tr>
+    <tr><td>テンプレートの内容</td><td>そのテンプレートを使う全シナリオ</td><td>意図しないシナリオのメッセージも変わる</td></tr>
+    <tr><td>タグ名の変更・削除</td><td>そのタグを発動条件にしているシナリオ</td><td>シナリオが発動しなくなる</td></tr>
+    <tr><td>友だち情報フィールド名</td><td>テンプレート・シナリオ内の変数参照</td><td>時刻指定配信が壊れる</td></tr>
+    <tr><td>シナリオの停止・削除</td><td>他シナリオからの参照（シナリオ開始アクション）</td><td>連携先のフローが途切れる</td></tr>
+    <tr><td>新しいシナリオ追加</td><td>既存タグ・テンプレートとの命名衝突</td><td>意図しない条件マッチ・混乱</td></tr>
+  </table>
+</div>
+
+<!-- ===== 7. Improvement Proposals ===== -->
+<div class="section" id="proposals">
+  <h2>7. 改善提案TOP3</h2>
+  <div class="section-lead">
+    現状の共有テンプレート運用を、MA専門家・CROコンサルタント・Lステップ運用者・リスク管理者・データアナリストの5つの視点で検証し、<strong>導入コスト × リターン</strong>で評価した改善案です。
+  </div>
+
+  <div class="proposal">
+    <div class="proposal-header">提案1: 共有CTAテンプレートの症例別分離 — 最もROIが高い</div>
+    <div class="proposal-body">
+      <table>
+        <tr><th style="width:130px;">項目</th><th>内容</th></tr>
+        <tr><td>現状の問題</td><td>「予約誘導」1テンプレートを10箇所で共有 → 1箇所の編集が全症例に波及。<br>また症例ごとのCVR（予約率）が測定できない。</td></tr>
+        <tr><td>提案</td><td>症例別に9つのCTAを作成（例: 叢生-予約誘導, 出っ歯-予約誘導）。<br>共有テンプレートは「マスター」として残し、各症例版はコピー＋カスタマイズ。</td></tr>
+        <tr><td>導入コスト</td><td class="cost-low">低（1-2時間: テンプレートコピー9回＋シナリオ参照先変更）</td></tr>
+        <tr><td>リターン</td><td class="return-high">高（症例別CVR計測可能・個別A/Bテスト可能・変更の爆風半径ゼロに）</td></tr>
+        <tr><td>推奨度</td><td><span class="star">★★★</span> すぐやるべき</td></tr>
+      </table>
+      <div class="narrative" style="margin-top:12px;">
+        <h4>なぜこれが最優先か（5つの視点から）</h4>
+        <p>
+          <strong>MA専門家:</strong> パーソナライズCTAは汎用CTAよりCVR +20-40%（HubSpot調査）<br>
+          <strong>CROコンサルタント:</strong> 「叢生で悩む人」と「出っ歯で悩む人」に同じ文面は機会損失<br>
+          <strong>Lステップ運用者:</strong> コピー＋参照変更だけなので作業リスクが極めて低い<br>
+          <strong>リスク管理者:</strong> 10箇所共有 → 1箇所限定に変わり、ヒューマンエラーの影響範囲が1/10に<br>
+          <strong>データアナリスト:</strong> 症例別の予約率を初めて比較可能に。どの症例の誘導が弱いか特定できる
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="proposal">
+    <div class="proposal-header">提案2: 48ステップ巨大シナリオの分割 — 構造的に最も重要</div>
+    <div class="proposal-body">
+      <table>
+        <tr><th style="width:130px;">項目</th><th>内容</th></tr>
+        <tr><td>現状の問題</td><td>1シナリオに全9症例×4本=36テンプレ+α → <strong>全患者に全症例の動画を送る設計</strong>。<br>出っ歯で悩む人に「受け口」「抜歯窩」の動画も届く。管理も困難。</td></tr>
+        <tr><td>提案</td><td><strong>案A（推奨）:</strong> アンケート症例タグで振り分け → 該当症例の個別シナリオのみ発動<br>→ 既に9本の個別シナリオが存在するのでそれを活用。48ステップシナリオは廃止可能。<br>
+        <strong>案B:</strong> 3フェーズに分割（AW誘導→症例配信→予約誘導）で管理単位を小さくする</td></tr>
+        <tr><td>導入コスト</td><td class="cost-mid">中（3-5時間: シナリオ発動条件の設計＋設定＋テスト）</td></tr>
+        <tr><td>リターン</td><td class="return-high">高（患者体験の劇的改善・管理コスト大幅減・分析粒度向上）</td></tr>
+        <tr><td>推奨度</td><td><span class="star">★★★</span> 提案1の次にやるべき</td></tr>
+      </table>
+      <div class="narrative" style="margin-top:12px;">
+        <h4>なぜ現状がベストではないか</h4>
+        <p>
+          <strong>MA専門家:</strong> 関連性の低いコンテンツの大量送信は購読解除率を上げる典型パターン<br>
+          <strong>CROコンサルタント:</strong> 「自分と関係ない症例」の動画は離脱要因。パーソナライズが鍵<br>
+          <strong>Lステップ運用者:</strong> 48ステップの管理は実質不可能。個別シナリオに分ければ各5ステップで明快<br>
+          <strong>リスク管理者:</strong> 巨大シナリオは1箇所のミスが48ステップ全体に波及するリスク<br>
+          <strong>データアナリスト:</strong> 48ステップ一括では「どのステップで離脱したか」の分析が困難
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="proposal">
+    <div class="proposal-header">提案3: 友だち情報フィールドの時刻参照を「タグ+相対時間」に置換</div>
+    <div class="proposal-body">
+      <table>
+        <tr><th style="width:130px;">項目</th><th>内容</th></tr>
+        <tr><td>現状の問題</td><td>フェーズ移行日時をフィールドに保存 → シナリオ内で変数参照 → フィールド名変更で配信が壊れる。<br>フィールドとシナリオの暗黙的な結合（見えない依存関係）。</td></tr>
+        <tr><td>提案</td><td>シナリオの「開始条件」をタグ付与トリガーに変更。配信タイミングはシナリオ内の「相対時間（○日後○時）」で制御。<br>フィールドは分析用の記録として残すが、配信制御には使わない。</td></tr>
+        <tr><td>導入コスト</td><td class="cost-high">中〜高（5-8時間: 全シナリオの発動条件見直し＋タグ設計＋テスト）</td></tr>
+        <tr><td>リターン</td><td class="return-mid">中（フィールド依存の脆弱性解消・シナリオ構造の単純化）</td></tr>
+        <tr><td>推奨度</td><td><span class="star">★★☆</span> 余裕があれば</td></tr>
+      </table>
+      <div class="narrative" style="margin-top:12px;">
+        <h4>慎重に検討すべき点</h4>
+        <p>
+          <strong>懐疑的視点:</strong> Lステップのタグトリガーは「タグ付与時」のみ発動するため、「○日後に配信」は結局シナリオ内の待機ステップが必要。フィールド参照の「絶対日時指定」にしかできないこと（例: 「3月25日の19時に送る」）はタグ方式では実現できない場合がある。<br>
+          <strong>結論:</strong> 現時点でフィールド名を変更する予定がなければ急ぐ必要はない。提案1・2を先にやり、運用が安定してから検討で十分。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="margin-top:24px;">優先度まとめ</h3>
+  <table>
+    <tr><th>#</th><th>改善案</th><th>導入コスト</th><th>リターン</th><th>推奨度</th><th>着手順</th></tr>
+    <tr>
+      <td>1</td>
+      <td>共有CTA → 症例別分離</td>
+      <td class="cost-low">低 (1-2h)</td>
+      <td class="return-high">高</td>
+      <td><span class="star">★★★</span></td>
+      <td style="font-weight:600; color:var(--green);">今すぐ</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>48ステップシナリオ分割</td>
+      <td class="cost-mid">中 (3-5h)</td>
+      <td class="return-high">高</td>
+      <td><span class="star">★★★</span></td>
+      <td style="font-weight:600; color:var(--blue);">次にやる</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>フィールド時刻参照の置換</td>
+      <td class="cost-high">中〜高 (5-8h)</td>
+      <td class="return-mid">中</td>
+      <td><span class="star">★★☆</span></td>
+      <td style="color:var(--gray);">余裕があれば</td>
+    </tr>
+  </table>
+</div>
+
+<!-- Footer -->
+<div style="text-align: center; padding: 32px; color: var(--gray); font-size: 12px;">
+  Generated by Lステップ自動化ツール | データ取得: 2026-03-21 | 改善提案: 2026-03-21
+</div>
+
+</div>
+</body>
+</html>

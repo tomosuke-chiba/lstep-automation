@@ -1,0 +1,260 @@
+[
+  {
+    "id": "2510206",
+    "name": "相談用 LINE登録リンク",
+    "fieldType": "text",
+    "folder": "重要URL"
+  },
+  {
+    "id": "2361976",
+    "name": "予約URL-規定値-全体予約URL",
+    "fieldType": "text",
+    "folder": "重要URL"
+  },
+  {
+    "id": "2518734",
+    "name": "友だち登録日",
+    "fieldType": "text",
+    "folder": "登録時アンケート"
+  },
+  {
+    "id": "2361975",
+    "name": "福岡MA以外-予約URL-クリック回数",
+    "fieldType": "text",
+    "folder": "予約リンク-クリック回数"
+  },
+  {
+    "id": "2361974",
+    "name": "福岡MA-予約URL-クリック回数",
+    "fieldType": "text",
+    "folder": "予約リンク-クリック回数"
+  },
+  {
+    "id": "2522624",
+    "name": "予約後-ウェビナー申込日",
+    "fieldType": "text",
+    "folder": "オートウェビナー"
+  },
+  {
+    "id": "2522433",
+    "name": "カウンセリング誘導-ウェビナー申込日",
+    "fieldType": "text",
+    "folder": "オートウェビナー"
+  },
+  {
+    "id": "2519952",
+    "name": "ウェビナー-名前",
+    "fieldType": "text",
+    "folder": "オートウェビナー"
+  },
+  {
+    "id": "2519948",
+    "name": "ウェビナー参加URL",
+    "fieldType": "text",
+    "folder": "オートウェビナー"
+  },
+  {
+    "id": "2519903",
+    "name": "フェーズ移行_①_日時（①初診-検討）",
+    "fieldType": "text",
+    "folder": "📅 初診獲得"
+  },
+  {
+    "id": "2519901",
+    "name": "フェーズ移行_②_日時（②カウンセリング誘導#1-検討）",
+    "fieldType": "text",
+    "folder": "📅 初診獲得"
+  },
+  {
+    "id": "2519900",
+    "name": "フェーズ移行_③_日時（③オートウェビナー-検討）",
+    "fieldType": "text",
+    "folder": "📅 初診獲得"
+  },
+  {
+    "id": "2519899",
+    "name": "フェーズ移行_④_日時（④ステップ配信-検討）",
+    "fieldType": "text",
+    "folder": "📅 初診獲得"
+  },
+  {
+    "id": "2519898",
+    "name": "フェーズ移行_⑤_日時（⑤カウンセリング誘導#2-検討）",
+    "fieldType": "text",
+    "folder": "📅 初診獲得"
+  },
+  {
+    "id": "2519897",
+    "name": "フェーズ移行_⑥_日時（⑥初診-予約済み）",
+    "fieldType": "text",
+    "folder": "📅 初診獲得"
+  },
+  {
+    "id": "2519895",
+    "name": "患者様-初診予約までの状況",
+    "fieldType": "select",
+    "folder": "患者様予約ステータス"
+  },
+  {
+    "id": "2509995",
+    "name": "患者様予約ステータス",
+    "fieldType": "select",
+    "folder": "患者様予約ステータス"
+  },
+  {
+    "id": "2518786",
+    "name": "精密-予約タップ-配信STOP-30日後リマインド-送信日",
+    "fieldType": "text",
+    "folder": "📅 離脱防止"
+  },
+  {
+    "id": "2518784",
+    "name": "契約-予約タップ-配信STOP-30日後リマインド-送信日",
+    "fieldType": "text",
+    "folder": "📅 離脱防止"
+  },
+  {
+    "id": "2518754",
+    "name": "フェーズ移行_①_日時（① 初診-検討）",
+    "fieldType": "text",
+    "folder": "📅 離脱防止"
+  },
+  {
+    "id": "2518753",
+    "name": "フェーズ移行_②_日時（② 初診-予約済み）",
+    "fieldType": "text",
+    "folder": "📅 離脱防止"
+  },
+  {
+    "id": "2518752",
+    "name": "フェーズ移行_③_日時（③ 精密-検討）",
+    "fieldType": "text",
+    "folder": "📅 離脱防止"
+  },
+  {
+    "id": "2518751",
+    "name": "フェーズ移行_④_日時（④ 精密-予約タップ-配信STOP）",
+    "fieldType": "text",
+    "folder": "📅 離脱防止"
+  },
+  {
+    "id": "2518750",
+    "name": "フェーズ移行_⑤_日時（⑤ 精密-予約済み）",
+    "fieldType": "text",
+    "folder": "📅 離脱防止"
+  },
+  {
+    "id": "2518749",
+    "name": "フェーズ移行_⑥_日時（⑥ 契約-検討）",
+    "fieldType": "text",
+    "folder": "📅 離脱防止"
+  },
+  {
+    "id": "2518748",
+    "name": "フェーズ移行_⑦_日時（⑦ 契約-予約タップ-配信STOP）",
+    "fieldType": "text",
+    "folder": "📅 離脱防止"
+  },
+  {
+    "id": "2518747",
+    "name": "フェーズ移行_⑧_日時（⑧ 契約）",
+    "fieldType": "text",
+    "folder": "📅 離脱防止"
+  },
+  {
+    "id": "2518746",
+    "name": "契約検討_配信1_日時",
+    "fieldType": "text",
+    "folder": "📅 離脱防止"
+  },
+  {
+    "id": "2518745",
+    "name": "契約検討_配信2_日時",
+    "fieldType": "text",
+    "folder": "📅 離脱防止"
+  },
+  {
+    "id": "2518744",
+    "name": "契約検討_配信3_日時",
+    "fieldType": "text",
+    "folder": "📅 離脱防止"
+  },
+  {
+    "id": "2518743",
+    "name": "契約検討_配信4_日時",
+    "fieldType": "text",
+    "folder": "📅 離脱防止"
+  },
+  {
+    "id": "2518742",
+    "name": "契約検討_配信5_日時",
+    "fieldType": "text",
+    "folder": "📅 離脱防止"
+  },
+  {
+    "id": "2518741",
+    "name": "契約検討_最終配信_日時",
+    "fieldType": "text",
+    "folder": "📅 離脱防止"
+  },
+  {
+    "id": "2518740",
+    "name": "精密検討_配信1_日時",
+    "fieldType": "text",
+    "folder": "📅 離脱防止"
+  },
+  {
+    "id": "2518739",
+    "name": "精密検討_配信2_日時",
+    "fieldType": "text",
+    "folder": "📅 離脱防止"
+  },
+  {
+    "id": "2518738",
+    "name": "精密検討_配信3_日時",
+    "fieldType": "text",
+    "folder": "📅 離脱防止"
+  },
+  {
+    "id": "2518737",
+    "name": "精密検討_配信4_日時",
+    "fieldType": "text",
+    "folder": "📅 離脱防止"
+  },
+  {
+    "id": "2518736",
+    "name": "精密検討_配信5_日時",
+    "fieldType": "text",
+    "folder": "📅 離脱防止"
+  },
+  {
+    "id": "2518735",
+    "name": "精密検討_最終配信_日時",
+    "fieldType": "text",
+    "folder": "📅 離脱防止"
+  },
+  {
+    "id": "2249645",
+    "name": "院長矯正相談-予約日",
+    "fieldType": "text",
+    "folder": "院長矯正相談-予約日"
+  },
+  {
+    "id": "2203727",
+    "name": "今までの装着時間",
+    "fieldType": "text",
+    "folder": "装着時間チェッカー"
+  },
+  {
+    "id": "2203725",
+    "name": "チェック回数",
+    "fieldType": "text",
+    "folder": "装着時間チェッカー"
+  },
+  {
+    "id": "2249646",
+    "name": "矯正歯科-動画-タップ数",
+    "fieldType": "text",
+    "folder": "リッチ④"
+  }
+]

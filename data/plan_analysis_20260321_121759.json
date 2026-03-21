@@ -1,0 +1,482 @@
+{
+  "analyzedAt": "2026-03-21T03:17:59.697Z",
+  "dataFreshness": {
+    "lastScrapedAt": "2026-03-21T02:43:27.000Z",
+    "ageHours": 0.6,
+    "isStale": false,
+    "recommendation": "use"
+  },
+  "components": [
+    {
+      "nodeId": "scenario:症例動画-ステップ配信-開咬",
+      "kind": "scenario",
+      "name": "症例動画-ステップ配信-開咬",
+      "status": "new"
+    },
+    {
+      "nodeId": "template:開咬#1",
+      "kind": "template",
+      "name": "開咬#1",
+      "status": "new"
+    },
+    {
+      "nodeId": "template:開咬#2",
+      "kind": "template",
+      "name": "開咬#2",
+      "status": "new"
+    },
+    {
+      "nodeId": "template:開咬#3",
+      "kind": "template",
+      "name": "開咬#3",
+      "status": "new"
+    },
+    {
+      "nodeId": "template:開咬#4",
+      "kind": "template",
+      "name": "開咬#4",
+      "status": "new"
+    },
+    {
+      "nodeId": "template:ステップ配信後-予約誘導-カウン...",
+      "kind": "template",
+      "name": "ステップ配信後-予約誘導-カウン...",
+      "status": "existing",
+      "notes": "9件の設定から参照中"
+    }
+  ],
+  "prerequisites": [],
+  "impacts": [
+    {
+      "level": "warn",
+      "message": "\"template:ステップ配信後-予約誘導-カウン...\" は 9 件の設定から参照されています。削除・変更すると動作に影響します。",
+      "relatedNodeIds": [
+        "scenario:1075762",
+        "scenario:1075761",
+        "scenario:1075758",
+        "scenario:1075757",
+        "scenario:1075756",
+        "scenario:1075755",
+        "scenario:1075754",
+        "scenario:1075706",
+        "scenario:1165656"
+      ]
+    }
+  ],
+  "sharedResources": [
+    {
+      "nodeId": "template:ステップ配信後-予約誘導-カウン...",
+      "name": "ステップ配信後-予約誘導-カウン...",
+      "kind": "template",
+      "usedByCount": 9,
+      "usedBy": [
+        "scenario:1075762",
+        "scenario:1075761",
+        "scenario:1075758",
+        "scenario:1075757",
+        "scenario:1075756",
+        "scenario:1075755",
+        "scenario:1075754",
+        "scenario:1075706",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:噛み合わない#1",
+      "name": "噛み合わない#1",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075762",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:噛み合わない#2",
+      "name": "噛み合わない#2",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075762",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:噛み合わない#3",
+      "name": "噛み合わない#3",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075762",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:噛み合わない#4",
+      "name": "噛み合わない#4",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075762",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:正中#1",
+      "name": "正中#1",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075761",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:正中#2",
+      "name": "正中#2",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075761",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:正中#3",
+      "name": "正中#3",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075761",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:正中#4",
+      "name": "正中#4",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075761",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:八重歯#1",
+      "name": "八重歯#1",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075758",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:八重歯#2",
+      "name": "八重歯#2",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075758",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:八重歯#3",
+      "name": "八重歯#3",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075758",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:八重歯#4",
+      "name": "八重歯#4",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075758",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:受け口#1",
+      "name": "受け口#1",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075757",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:受け口#2",
+      "name": "受け口#2",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075757",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:受け口#3",
+      "name": "受け口#3",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075757",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:受け口#4",
+      "name": "受け口#4",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075757",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:すきっ歯#1",
+      "name": "すきっ歯#1",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075756",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:すきっ歯#2",
+      "name": "すきっ歯#2",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075756",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:すきっ歯#3",
+      "name": "すきっ歯#3",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075756",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:すきっ歯#4",
+      "name": "すきっ歯#4",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075756",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:口唇#1",
+      "name": "口唇#1",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075755",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:口唇#2",
+      "name": "口唇#2",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075755",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:口唇#3",
+      "name": "口唇#3",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075755",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:口唇#4",
+      "name": "口唇#4",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075755",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:抜歯窩#1",
+      "name": "抜歯窩#1",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075754",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:抜歯窩#2",
+      "name": "抜歯窩#2",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075754",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:抜歯窩#3",
+      "name": "抜歯窩#3",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075754",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:抜歯窩#4",
+      "name": "抜歯窩#4",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075754",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:叢生#1",
+      "name": "叢生#1",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075706",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:叢生#2",
+      "name": "叢生#2",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075706",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:叢生#3",
+      "name": "叢生#3",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075706",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:叢生#4",
+      "name": "叢生#4",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075706",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:出っ歯#1",
+      "name": "出っ歯#1",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075704",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:出っ歯#2",
+      "name": "出っ歯#2",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075704",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:出っ歯#3",
+      "name": "出っ歯#3",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075704",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:出っ歯#4",
+      "name": "出っ歯#4",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1075704",
+        "scenario:1165656"
+      ]
+    },
+    {
+      "nodeId": "template:4️⃣ ⑦ 契約-予約タップ-配...",
+      "name": "4️⃣ ⑦ 契約-予約タップ-配...",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1164712",
+        "scenario:1164710"
+      ]
+    },
+    {
+      "nodeId": "template:3️⃣ ④ 精密-予約タップ-配...",
+      "name": "3️⃣ ④ 精密-予約タップ-配...",
+      "kind": "template",
+      "usedByCount": 2,
+      "usedBy": [
+        "scenario:1164709",
+        "scenario:1162434"
+      ]
+    }
+  ],
+  "executionOrder": [
+    "scenario:症例動画-ステップ配信-開咬",
+    "template:開咬#1",
+    "template:開咬#2",
+    "template:開咬#3",
+    "template:開咬#4",
+    "template:ステップ配信後-予約誘導-カウン..."
+  ],
+  "cycles": [],
+  "graphSummary": {
+    "totalNodes": 230,
+    "totalEdges": 104,
+    "scenarioCount": 18,
+    "tagCount": 111,
+    "templateCount": 58,
+    "friendFieldCount": 43
+  }
+}

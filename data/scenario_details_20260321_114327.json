@@ -1,0 +1,1176 @@
+[
+  {
+    "id": "1129228",
+    "name": "旧-カウンセリング決定後-福岡MA",
+    "status": "下書き",
+    "sendCount": 1,
+    "stepCount": 1,
+    "createdAt": "2025/10/31",
+    "updatedAt": "",
+    "steps": [
+      {
+        "stepIndex": 0,
+        "timing": "1日後 18:55 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] YouTube紹介-福岡MA: 先日はカウンセリングのご予約、誠にありが…",
+        "branchConditions": [],
+        "actions": []
+      }
+    ]
+  },
+  {
+    "id": "1075762",
+    "name": "症例動画-ステップ配信-噛み合わない",
+    "status": "下書き",
+    "sendCount": 1,
+    "stepCount": 5,
+    "createdAt": "2025/06/22",
+    "updatedAt": "",
+    "steps": [
+      {
+        "stepIndex": 0,
+        "timing": "開始当日 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 噛み合わない#1: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 1,
+        "timing": "1日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 噛み合わない#2: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 2,
+        "timing": "2日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 噛み合わない#3: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 3,
+        "timing": "3日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 噛み合わない#4: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 4,
+        "timing": "4日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] ステップ配信後-予約誘導-カウン...: 📢 お知らせ ━━━━━━━━━━━  当院…",
+        "branchConditions": [],
+        "actions": []
+      }
+    ]
+  },
+  {
+    "id": "1075761",
+    "name": "症例動画-ステップ配信-正中",
+    "status": "下書き",
+    "sendCount": 1,
+    "stepCount": 5,
+    "createdAt": "2025/06/22",
+    "updatedAt": "",
+    "steps": [
+      {
+        "stepIndex": 0,
+        "timing": "開始当日 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 正中#1: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 1,
+        "timing": "1日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 正中#2: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 2,
+        "timing": "2日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 正中#3: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 3,
+        "timing": "3日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 正中#4: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 4,
+        "timing": "4日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] ステップ配信後-予約誘導-カウン...: 📢 お知らせ ━━━━━━━━━━━  当院…",
+        "branchConditions": [],
+        "actions": []
+      }
+    ]
+  },
+  {
+    "id": "1075758",
+    "name": "症例動画-ステップ配信-八重歯",
+    "status": "下書き",
+    "sendCount": 1,
+    "stepCount": 5,
+    "createdAt": "2025/06/22",
+    "updatedAt": "",
+    "steps": [
+      {
+        "stepIndex": 0,
+        "timing": "開始当日 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 八重歯#1: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 1,
+        "timing": "1日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 八重歯#2: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 2,
+        "timing": "2日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 八重歯#3: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 3,
+        "timing": "3日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 八重歯#4: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 4,
+        "timing": "4日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] ステップ配信後-予約誘導-カウン...: 📢 お知らせ ━━━━━━━━━━━  当院…",
+        "branchConditions": [],
+        "actions": []
+      }
+    ]
+  },
+  {
+    "id": "1075757",
+    "name": "症例動画-ステップ配信-受け口",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 5,
+    "createdAt": "2025/06/22",
+    "updatedAt": "",
+    "steps": [
+      {
+        "stepIndex": 0,
+        "timing": "開始当日 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 受け口#1: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 1,
+        "timing": "1日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 受け口#2: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 2,
+        "timing": "2日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 受け口#3: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 3,
+        "timing": "3日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 受け口#4: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 4,
+        "timing": "4日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] ステップ配信後-予約誘導-カウン...: 📢 お知らせ ━━━━━━━━━━━  当院…",
+        "branchConditions": [],
+        "actions": []
+      }
+    ]
+  },
+  {
+    "id": "1075756",
+    "name": "症例動画-ステップ配信-すきっ歯",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 5,
+    "createdAt": "2025/06/22",
+    "updatedAt": "",
+    "steps": [
+      {
+        "stepIndex": 0,
+        "timing": "開始当日 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] すきっ歯#1: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 1,
+        "timing": "1日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] すきっ歯#2: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 2,
+        "timing": "2日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] すきっ歯#3: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 3,
+        "timing": "3日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] すきっ歯#4: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 4,
+        "timing": "4日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] ステップ配信後-予約誘導-カウン...: 📢 お知らせ ━━━━━━━━━━━  当院…",
+        "branchConditions": [],
+        "actions": []
+      }
+    ]
+  },
+  {
+    "id": "1075755",
+    "name": "症例動画-ステップ配信-口唇",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 5,
+    "createdAt": "2025/06/22",
+    "updatedAt": "",
+    "steps": [
+      {
+        "stepIndex": 0,
+        "timing": "開始当日 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 口唇#1: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 1,
+        "timing": "1日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 口唇#2: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 2,
+        "timing": "2日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 口唇#3: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 3,
+        "timing": "3日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 口唇#4: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 4,
+        "timing": "4日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] ステップ配信後-予約誘導-カウン...: 📢 お知らせ ━━━━━━━━━━━  当院…",
+        "branchConditions": [],
+        "actions": []
+      }
+    ]
+  },
+  {
+    "id": "1075754",
+    "name": "症例動画-ステップ配信-抜歯窩",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 5,
+    "createdAt": "2025/06/22",
+    "updatedAt": "",
+    "steps": [
+      {
+        "stepIndex": 0,
+        "timing": "開始当日 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 抜歯窩#1: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 1,
+        "timing": "1日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 抜歯窩#2: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 2,
+        "timing": "2日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 抜歯窩#3: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 3,
+        "timing": "3日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 抜歯窩#4: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 4,
+        "timing": "4日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] ステップ配信後-予約誘導-カウン...: 📢 お知らせ ━━━━━━━━━━━  当院…",
+        "branchConditions": [],
+        "actions": []
+      }
+    ]
+  },
+  {
+    "id": "1075706",
+    "name": "症例動画-ステップ配信-叢生",
+    "status": "下書き",
+    "sendCount": 3,
+    "stepCount": 5,
+    "createdAt": "2025/06/22",
+    "updatedAt": "",
+    "steps": [
+      {
+        "stepIndex": 0,
+        "timing": "開始当日 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 叢生#1: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 1,
+        "timing": "1日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 叢生#2: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 2,
+        "timing": "2日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 叢生#3: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 3,
+        "timing": "3日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 叢生#4: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 4,
+        "timing": "4日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] ステップ配信後-予約誘導-カウン...: 📢 お知らせ ━━━━━━━━━━━  当院…",
+        "branchConditions": [],
+        "actions": []
+      }
+    ]
+  },
+  {
+    "id": "1075704",
+    "name": "症例動画-ステップ配信-出っ歯",
+    "status": "下書き",
+    "sendCount": 2,
+    "stepCount": 4,
+    "createdAt": "2025/06/22",
+    "updatedAt": "",
+    "steps": [
+      {
+        "stepIndex": 0,
+        "timing": "開始当日 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 出っ歯#1: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 1,
+        "timing": "1日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 出っ歯#2: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 2,
+        "timing": "2日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 出っ歯#3: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 3,
+        "timing": "3日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 出っ歯#4: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      }
+    ]
+  },
+  {
+    "id": "1168147",
+    "name": "LINE登録時アンケート 離脱防止シナリオ",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 4,
+    "createdAt": "2026/02/10",
+    "updatedAt": "",
+    "steps": [
+      {
+        "stepIndex": 0,
+        "timing": "開始直後 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "名前さん  この度は MA矯正... 【カルー…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 1,
+        "timing": "1時間0分後 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 当日1時間後: 名前さん、 先ほどのアンケート ご回答い…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 2,
+        "timing": "1日と 0分後 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 1日後: 名前さん、  昨日の送信したアンケートの…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 3,
+        "timing": "3日と 0分後 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 3日後: アンケートの依頼の 最終リマインドです⏰ …",
+        "branchConditions": [],
+        "actions": []
+      }
+    ]
+  },
+  {
+    "id": "1165687",
+    "name": "予約後-オートウェビナー誘導",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 8,
+    "createdAt": "2026/02/04",
+    "updatedAt": "",
+    "steps": [
+      {
+        "stepIndex": 0,
+        "timing": "開始直後 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "先ほどはご予約、 誠にありがと... 【カル…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 1,
+        "timing": "開始直後 2通目",
+        "messageType": "メッセージ",
+        "messagePreview": "先ほどはご予約、 誠にありがと... 【カル…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 2,
+        "timing": "1時間0分後 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "名前さん、 先ほどご案内した... 【カル…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 3,
+        "timing": "1時間0分後 2通目",
+        "messageType": "メッセージ",
+        "messagePreview": "名前さん、 先ほどご案内した... 【カル…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 4,
+        "timing": "1日と 0分後 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "名前さん、勉強会のご案内ご確... 【カル…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 5,
+        "timing": "1日と 0分後 2通目",
+        "messageType": "メッセージ",
+        "messagePreview": "名前さん、勉強会のご案内ご確... 【カル…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 6,
+        "timing": "3日と 0分後 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "名前さん、 勉強会のご案内、... 【カル…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 7,
+        "timing": "3日と 0分後 2通目",
+        "messageType": "メッセージ",
+        "messagePreview": "名前さん、 勉強会のご案内、... 【カル…",
+        "branchConditions": [],
+        "actions": []
+      }
+    ]
+  },
+  {
+    "id": "1164712",
+    "name": "契約-配信STOP-30日後 配信",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 1,
+    "createdAt": "2026/01/31",
+    "updatedAt": "",
+    "steps": [
+      {
+        "stepIndex": 0,
+        "timing": "30日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 4️⃣ ⑦ 契約-予約タップ-配...: 名前さん  こんにちは😊 以前、治療開始…",
+        "branchConditions": [],
+        "actions": []
+      }
+    ]
+  },
+  {
+    "id": "1164710",
+    "name": "契約-検討向け-ステップ配信",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 6,
+    "createdAt": "2026/01/31",
+    "updatedAt": "",
+    "steps": [
+      {
+        "stepIndex": 0,
+        "timing": "開始当日 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 【精密→契約検討】当日 19:0...: 名前さん  本日は精密検査に お越しいた…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 1,
+        "timing": "1日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 【精密→契約検討】1日後 19:...: 名前さん  昨日はご来院、 ありがとうご…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 2,
+        "timing": "3日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 【精密→契約検討】3日後 19:...: 名前さん  こんにちは😊 MA矯正歯科です…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 3,
+        "timing": "7日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 【精密→契約検討】7日後 19:...: 名前さん  こんにちは😊 MA矯正歯科です…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 4,
+        "timing": "14日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 【精密→契約検討】14日後 19...: 名前さん  こんにちは😊 MA矯正歯科です…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 5,
+        "timing": "30日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 4️⃣ ⑦ 契約-予約タップ-配...: 名前さん  こんにちは😊 以前、治療開始…",
+        "branchConditions": [],
+        "actions": []
+      }
+    ]
+  },
+  {
+    "id": "1164709",
+    "name": "精密-配信STOP-30日後 配信",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 1,
+    "createdAt": "2026/01/31",
+    "updatedAt": "",
+    "steps": [
+      {
+        "stepIndex": 0,
+        "timing": "30日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 3️⃣ ④ 精密-予約タップ-配...: 名前さん  こんにちは😊 以前、精密検査…",
+        "branchConditions": [],
+        "actions": []
+      }
+    ]
+  },
+  {
+    "id": "1162434",
+    "name": "精密-検討向け-ステップ配信",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 6,
+    "createdAt": "2026/01/25",
+    "updatedAt": "",
+    "steps": [
+      {
+        "stepIndex": 0,
+        "timing": "開始当日 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 【初診→精密検討】当日 19:0...: 名前さん  本日はMA矯正歯科への ご来院…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 1,
+        "timing": "1日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 【初診→精密検討】1日後 19:...: 名前さん  昨日はご来院いただき ありが…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 2,
+        "timing": "3日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 【初診→精密検討】3日後 19:...: 名前さん  矯正治療について ご検討いた…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 3,
+        "timing": "7日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 【初診→精密検討】7日後 19:...: 名前さん  こんにちは😊 MA矯正歯科です…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 4,
+        "timing": "14日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 【初診→精密検討】14日後 19...: 名前さん  こんにちは😊 MA矯正歯科です…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 5,
+        "timing": "30日後 19:00 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 3️⃣ ④ 精密-予約タップ-配...: 名前さん  こんにちは😊 以前、精密検査…",
+        "branchConditions": [],
+        "actions": []
+      }
+    ]
+  },
+  {
+    "id": "1165667",
+    "name": "顕在層向け-カウンセリング誘導#1-時刻指定-1日後AW誘導シナリオ開始",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 3,
+    "createdAt": "2026/02/03",
+    "updatedAt": "",
+    "steps": [
+      {
+        "stepIndex": 0,
+        "timing": "開始直後 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "名前さん！ 問診票の回答 あり...",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 1,
+        "timing": "1時間0分後 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] カウンセリング誘導#1 1時間後...: 名前さん！ 先ほどの 【歯並び相談】のご…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 2,
+        "timing": "1日と 0分後 1通目",
+        "messageType": "",
+        "messagePreview": "[テンプレート] 友だち情報 [フェーズ移行_③_日時...: ",
+        "branchConditions": [],
+        "actions": []
+      }
+    ]
+  },
+  {
+    "id": "1165656",
+    "name": "オートウェビナー誘導-時刻指定 + 10種類症例Before / After",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 48,
+    "createdAt": "2026/02/03",
+    "updatedAt": "",
+    "steps": [
+      {
+        "stepIndex": 0,
+        "timing": "開始直後 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "【 📣 お知らせ 】   🔶全国に5... 【画像…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 1,
+        "timing": "開始直後 2通目",
+        "messageType": "メッセージ",
+        "messagePreview": "【 📣 お知らせ 】   🔶全国に5... 【画像…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 2,
+        "timing": "1時間0分後 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "名前さん！ 先ほどご案内した... 【画像…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 3,
+        "timing": "1時間0分後 2通目",
+        "messageType": "メッセージ",
+        "messagePreview": "名前さん！ 先ほどご案内した... 【画像…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 4,
+        "timing": "1日と 0分後 2通目",
+        "messageType": "メッセージ",
+        "messagePreview": "名前さん、 セミナーのご案内... 【画像…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 5,
+        "timing": "1日と 0分後 3通目",
+        "messageType": "メッセージ",
+        "messagePreview": "名前さん、 セミナーのご案内... 【画像…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 6,
+        "timing": "3日と 0分後 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "名前さん、 セミナーのご案内... 【画像…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 7,
+        "timing": "3日と 0分後 2通目",
+        "messageType": "メッセージ",
+        "messagePreview": "名前さん、 セミナーのご案内... 【画像…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 8,
+        "timing": "3日と 23時間59分後 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 症例投稿始まることの予告: 名前さん、こんにちは！  本日から特別に…",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 9,
+        "timing": "3日と 23時間59分後 2通目",
+        "messageType": "",
+        "messagePreview": "[テンプレート] 友だち情報 [フェーズ移行_④_日時...: ",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 10,
+        "timing": "4日と 0分後 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 出っ歯#1: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 11,
+        "timing": "4日と 0分後 2通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 叢生#1: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 12,
+        "timing": "4日と 0分後 3通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 抜歯窩#1: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 13,
+        "timing": "4日と 0分後 4通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 口唇#1: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 14,
+        "timing": "4日と 0分後 5通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] すきっ歯#1: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 15,
+        "timing": "4日と 0分後 6通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 受け口#1: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 16,
+        "timing": "4日と 0分後 7通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 八重歯#1: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 17,
+        "timing": "4日と 0分後 8通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 正中#1: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 18,
+        "timing": "4日と 0分後 9通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 噛み合わない#1: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 19,
+        "timing": "5日と 0分後 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 出っ歯#2: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 20,
+        "timing": "5日と 0分後 2通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 叢生#2: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 21,
+        "timing": "5日と 0分後 3通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 抜歯窩#2: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 22,
+        "timing": "5日と 0分後 4通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 口唇#2: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 23,
+        "timing": "5日と 0分後 5通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] すきっ歯#2: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 24,
+        "timing": "5日と 0分後 6通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 受け口#2: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 25,
+        "timing": "5日と 0分後 7通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 八重歯#2: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 26,
+        "timing": "5日と 0分後 8通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 正中#2: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 27,
+        "timing": "5日と 0分後 9通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 噛み合わない#2: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 28,
+        "timing": "6日と 0分後 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 出っ歯#3: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 29,
+        "timing": "6日と 0分後 2通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 叢生#3: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 30,
+        "timing": "6日と 0分後 3通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 抜歯窩#3: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 31,
+        "timing": "6日と 0分後 4通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 口唇#3: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 32,
+        "timing": "6日と 0分後 5通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] すきっ歯#3: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 33,
+        "timing": "6日と 0分後 6通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 受け口#3: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 34,
+        "timing": "6日と 0分後 7通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 八重歯#3: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 35,
+        "timing": "6日と 0分後 8通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 正中#3: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 36,
+        "timing": "6日と 0分後 9通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 噛み合わない#3: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 37,
+        "timing": "7日と 0分後 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 出っ歯#4: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 38,
+        "timing": "7日と 0分後 2通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 叢生#4: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 39,
+        "timing": "7日と 0分後 3通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 抜歯窩#4: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 40,
+        "timing": "7日と 0分後 4通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 口唇#4: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 41,
+        "timing": "7日と 0分後 5通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] すきっ歯#4: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 42,
+        "timing": "7日と 0分後 6通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 受け口#4: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 43,
+        "timing": "7日と 0分後 7通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 八重歯#4: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 44,
+        "timing": "7日と 0分後 8通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 正中#4: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 45,
+        "timing": "7日と 0分後 9通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] 噛み合わない#4: 【フレックスメッセージ】",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 46,
+        "timing": "8日と 0分後 1通目",
+        "messageType": "",
+        "messagePreview": "[テンプレート] 友だち情報 [フェーズ移行_⑤_日時...: ",
+        "branchConditions": [],
+        "actions": []
+      },
+      {
+        "stepIndex": 47,
+        "timing": "8日と 1分後 1通目",
+        "messageType": "メッセージ",
+        "messagePreview": "[テンプレート] ステップ配信後-予約誘導-カウン...: 📢 お知らせ ━━━━━━━━━━━  当院…",
+        "branchConditions": [],
+        "actions": []
+      }
+    ]
+  }
+]

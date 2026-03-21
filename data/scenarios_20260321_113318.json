@@ -1,0 +1,164 @@
+[
+  {
+    "id": "1129228",
+    "name": "旧-カウンセリング決定後-福岡MA",
+    "status": "下書き",
+    "sendCount": 1,
+    "stepCount": 0,
+    "createdAt": "2025/10/31",
+    "updatedAt": ""
+  },
+  {
+    "id": "1075762",
+    "name": "症例動画-ステップ配信-噛み合わない",
+    "status": "下書き",
+    "sendCount": 1,
+    "stepCount": 0,
+    "createdAt": "2025/06/22",
+    "updatedAt": ""
+  },
+  {
+    "id": "1075761",
+    "name": "症例動画-ステップ配信-正中",
+    "status": "下書き",
+    "sendCount": 1,
+    "stepCount": 0,
+    "createdAt": "2025/06/22",
+    "updatedAt": ""
+  },
+  {
+    "id": "1075758",
+    "name": "症例動画-ステップ配信-八重歯",
+    "status": "下書き",
+    "sendCount": 1,
+    "stepCount": 0,
+    "createdAt": "2025/06/22",
+    "updatedAt": ""
+  },
+  {
+    "id": "1075757",
+    "name": "症例動画-ステップ配信-受け口",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 0,
+    "createdAt": "2025/06/22",
+    "updatedAt": ""
+  },
+  {
+    "id": "1075756",
+    "name": "症例動画-ステップ配信-すきっ歯",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 0,
+    "createdAt": "2025/06/22",
+    "updatedAt": ""
+  },
+  {
+    "id": "1075755",
+    "name": "症例動画-ステップ配信-口唇",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 0,
+    "createdAt": "2025/06/22",
+    "updatedAt": ""
+  },
+  {
+    "id": "1075754",
+    "name": "症例動画-ステップ配信-抜歯窩",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 0,
+    "createdAt": "2025/06/22",
+    "updatedAt": ""
+  },
+  {
+    "id": "1075706",
+    "name": "症例動画-ステップ配信-叢生",
+    "status": "下書き",
+    "sendCount": 3,
+    "stepCount": 0,
+    "createdAt": "2025/06/22",
+    "updatedAt": ""
+  },
+  {
+    "id": "1075704",
+    "name": "症例動画-ステップ配信-出っ歯",
+    "status": "下書き",
+    "sendCount": 2,
+    "stepCount": 0,
+    "createdAt": "2025/06/22",
+    "updatedAt": ""
+  },
+  {
+    "id": "1168147",
+    "name": "LINE登録時アンケート 離脱防止シナリオ",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 0,
+    "createdAt": "2026/02/10",
+    "updatedAt": ""
+  },
+  {
+    "id": "1165687",
+    "name": "予約後-オートウェビナー誘導",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 0,
+    "createdAt": "2026/02/04",
+    "updatedAt": ""
+  },
+  {
+    "id": "1164712",
+    "name": "契約-配信STOP-30日後 配信",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 0,
+    "createdAt": "2026/01/31",
+    "updatedAt": ""
+  },
+  {
+    "id": "1164710",
+    "name": "契約-検討向け-ステップ配信",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 0,
+    "createdAt": "2026/01/31",
+    "updatedAt": ""
+  },
+  {
+    "id": "1164709",
+    "name": "精密-配信STOP-30日後 配信",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 0,
+    "createdAt": "2026/01/31",
+    "updatedAt": ""
+  },
+  {
+    "id": "1162434",
+    "name": "精密-検討向け-ステップ配信",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 0,
+    "createdAt": "2026/01/25",
+    "updatedAt": ""
+  },
+  {
+    "id": "1165667",
+    "name": "顕在層向け-カウンセリング誘導#1-時刻指定-1日後AW誘導シナリオ開始",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 0,
+    "createdAt": "2026/02/03",
+    "updatedAt": ""
+  },
+  {
+    "id": "1165656",
+    "name": "オートウェビナー誘導-時刻指定 + 10種類症例Before / After",
+    "status": "下書き",
+    "sendCount": 0,
+    "stepCount": 0,
+    "createdAt": "2026/02/03",
+    "updatedAt": ""
+  }
+]

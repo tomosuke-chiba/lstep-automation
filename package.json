@@ -1,0 +1,29 @@
+{
+  "name": "lstep-automation",
+  "version": "0.1.0",
+  "scripts": {
+    "dev":            "ts-node src/index.ts",
+    "scan":           "ts-node src/index.ts scan",
+    "scan:scenarios": "ts-node src/index.ts scan:scenarios",
+    "scan:tags":      "ts-node src/index.ts scan:tags",
+    "scan:fields":    "ts-node src/index.ts scan:fields",
+    "dep:map":        "ts-node src/index.ts dep:map",
+    "dep:doc":        "ts-node src/index.ts dep:doc",
+    "build":          "tsc",
+    "typecheck":      "tsc --noEmit",
+    "lint":           "eslint 'src/**/*.ts'",
+    "lint:fix":       "eslint 'src/**/*.ts' --fix"
+  },
+  "dependencies": {
+    "playwright": "^1.42.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0",
+    "ts-node": "^10.9.2",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0"
+  },
+  "engines": { "node": ">=20.0.0" }
+}
